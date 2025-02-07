@@ -48,3 +48,81 @@ p {
     list-style-type: none;
     padding: 0;
 }
+.profilbild {
+    width: 180px;
+    height: auto;
+} 
+
+.bold {
+    font-weight: 700; 
+  }
+
+  h1.regular {
+    font-weight: 400;
+}
+
+  .kontakt-button {
+    width: 120px;
+    height: 36px;
+    font-size: 16px;
+    background-color: #E3A723;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.kontakt-button:hover {
+    background-color: #222324; 
+}
+
+.projekt-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.projekt img {
+    width: 456px;
+    height: 143px;
+    object-fit: cover; 
+}
+
+.projekt {
+    display: flex;          
+    align-items: center;   
+    gap: 20px;              
+}
+
+.projekt img {
+    width: 456px;          
+    height: auto;            
+}
+
+.projekt p {
+    font-size: 16px;        
+    color: #333;            
+    max-width: 400px;        
+}
+
+h2 a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+h2 a:hover {
+    color: #555; 
+}
+
+.name-link {
+    text-decoration: none;
+    color:inherit;
+}
+
+.name-link:hover {
+    color: gray; 
+}
+
+.projekt-link  {
+    text-decoration: none;
+    color:inherit;
+}
