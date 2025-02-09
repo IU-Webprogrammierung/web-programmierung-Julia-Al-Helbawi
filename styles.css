@@ -126,3 +126,17 @@ h2 a:hover {
     text-decoration: none;
     color:inherit;
 }
+
+.video-container {
+    width: 782px; 
+    height: auto;   
+    display: block;
+    margin: 0 auto; 
+}
+
+.projekt-bild {
+    width: 782px; 
+    height: auto;   
+    display: block;
+    margin: 0 auto; 
+}
