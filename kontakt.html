@@ -1,102 +1,114 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Julia Al-Helbawi - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        body {
-            font-family: 'IBM Plex Sans', sans-serif;
-        }
+      body {
+        font-family: "IBM Plex Sans", sans-serif;
+      }
     </style>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+    <a href="index.html"
+      >Mein Foto
+      <img
+        src="Bilder/mein-foto.png"
+        alt="Julia Al-Helbawi"
+        class="profilbild"
+        style="width: 180px; height: auto"
+      />
+    </a>
+    <a href="index.html" class="name-link">
+      <h1 class="bold">Julia Al-Helbawi</h1>
+    </a>
+    <h1 class="regular">UI/UX Designerin</h1>
+
     <div class="container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <a href="index.html">
-                <img src="Bilder/mein-foto.png" alt="Julia Al-Helbawi" class="profilbild" style="width: 180px; height: auto;">
-            </a>
-            <a href="index.html" class="name-link">
-                <h1 class="bold">Julia Al-Helbawi</h1>
-            </a>
-            <h1 class="regular">UI/UX Designerin</h1>
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h2>Meine Arbeiten</h2>
+        <a href="projekt1.html" class="projekt-link">
+          <div class="projekt-box">Urban Gardening App</div>
+        </a>
+        <a href="projekt2.html" class="projekt-link">
+          <div class="projekt-box">Landing Page for luxury watches</div>
+        </a>
+        <a href="projekt3.html" class="projekt-link">
+          <div class="projekt-box">E-Commerce App</div>
+        </a>
+        <div>Fehlerdatenbank Unternehmenssoftware</div>
+        <div>Web-Service Cleaning</div>
+        <div>Landing Page Sugaring</div>
+        <div>Webseite für die Staatliche Realschule</div>
 
-            <h2>Meine Arbeiten</h2>
-            <a href="projekt1.html" class="projekt-link">
-                <div class="projekt-box">Urban Gardening App</div>
-            </a>
-<div>Fehlerdatenbank Unternehmenssoftware</div>
-<a href="projekt2.html" class="projekt-link">
-    <div class="projekt-box">Landing Page for luxury watches</div>
-</a>
-<div>Web-Service Cleaning</div>
-<div>E-Commerce App</div>
-<div>Landing Page Sugaring</div>
-<div>Webseite für die Staatliche Realschule</div>
-
-<h2>Tools</h2>
-<div>Figma</div>
-<div>Canva</div>
-<div>Visme</div>
-<div>InDesign</div>
-<div>Illustrator</div>
-
-<h2>Sprachen</h2>
-<div>Deutsch</div>
-<div>Englisch</div>
-<div>Russisch</div>
-<div>Ukrainisch</div>
-<div>Arabisch</div>
-
-<h2><a href="ueber-mich.html">Über mich</a></h2>
-<h2>Kontakt</h2>
-        </aside>
-
-        <!-- Kontaktformular -->
-        <section class="content">
-            <h1>Kontakt</h1>
-            <p><strong>Ich freue mich auf Ihre Nachricht!</strong></p>
-            <form action="kontakt.php" method="post">
-                <div class="form-group">
-                    <label for="vorname">Vorname:</label>
-                    <input type="text" id="vorname" name="vorname" required>
-                </div>
-                <div class="form-group">
-                    <label for="nachname">Nachname:</label>
-                    <input type="text" id="nachname" name="nachname" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">E-Mail-Adresse:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="telefon">Telefonnummer:</label>
-                    <input type="tel" id="telefon" name="telefon">
-                </div>
-                <div class="form-group">
-                    <label for="nachricht">Ihre Nachricht an mich:</label>
-                    <textarea id="nachricht" name="nachricht" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="kontakt-button">Abschicken</button>
-            </form>
-            
-        </section>
-    </div>
-    <div class="social-media">
+        <h2><a href="ueber-mich.html">Über mich</a></h2>
+        <h2
+          style="color: #e3a723; font-weight: bold; text-decoration: underline"
+        >
+          Kontakt
+        </h2>
+      </aside>
+      <div class="social-media">
         <a href="https://www.linkedin.com/in/julia-al-helbawi" target="_blank">
-            <img src="Bilder/Linkedin.png" alt="LinkedIn" width="30"> LinkedIn
+          <img src="Bilder/Linkedin.png" alt="LinkedIn" width="30" /> LinkedIn
         </a>
         <a href="https://www.behance.net/juliaal-helbawi1" target="_blank">
-            <img src="Bilder/behance.png" alt="Behance" width="30"> Behance
+          <img src="Bilder/behance.png" alt="Behance" width="30" /> Behance
         </a>
         <a href="https://www.instagram.com/dein-profil" target="_blank">
-            <img src="Bilder/instagram.png" alt="Instagram" width="30"> Instagram
+          <img src="Bilder/instagram.png" alt="Instagram" width="30" />
+          Instagram
         </a>
-    </div>
-</body>
-</html>
+      </div>
 
-        
+      <!-- Kontaktformular -->
+      <style>
+        label {
+          font-size: 14px;
+        }
+      </style>
+      <section class="content">
+        <h1>Kontakt</h1>
+        <h2>Ich freue mich auf Deine Nachricht!</h2>
+        <form action="kontakt.php" method="post">
+          <div class="form-group">
+            <label for="vorname">Vorname:</label>
+            <input type="text" id="vorname" name="vorname" required />
+          </div>
+          <div class="form-group">
+            <label for="nachname">Nachname:</label>
+            <input type="text" id="nachname" name="nachname" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-Mail-Adresse:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="telefon">Telefonnummer:</label>
+            <input type="tel" id="telefon" name="telefon" />
+          </div>
+          <div class="form-group">
+            <label for="nachricht">Deine Nachricht an mich:</label>
+            <textarea
+              id="nachricht"
+              name="nachricht"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="kontakt-button">Abschicken</button>
+        </form>
+      </section>
+      <div style="font-size: 12px">© 2025 by Julia Al-Helbawi</div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

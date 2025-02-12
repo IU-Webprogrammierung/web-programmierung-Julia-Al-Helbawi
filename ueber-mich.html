@@ -1,87 +1,133 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Julia Al-Helbawi - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        body {
-            font-family: 'IBM Plex Sans', sans-serif;
-        }
+      body {
+        font-family: "IBM Plex Sans", sans-serif;
+      }
     </style>
-   <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+    <a href="index.html"
+      >Mein Foto
+      <img
+        src="Bilder/mein-foto.png"
+        alt="Julia Al-Helbawi"
+        class="profilbild"
+        style="width: 180px; height: auto"
+      />
+    </a>
+    <a href="index.html" class="name-link">
+      <h1 class="bold">Julia Al-Helbawi</h1>
+    </a>
+    <h1 class="regular">UI/UX Designerin</h1>
+
     <div class="container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <a href="index.html">
-                <img src="Bilder/mein-foto.png" alt="Julia Al-Helbawi" class="profilbild" style="width: 180px; height: auto;">
-            </a>
-            <a href="index.html" class="name-link">
-                <h1 class="bold">Julia Al-Helbawi</h1>
-            </a>
-            <h1 class="regular">UI/UX Designerin</h1>
-            <h2>Meine Arbeiten</h2>
-            <a href="projekt1.html" class="projekt-link">
-                <div class="projekt-box">Urban Gardening App</div>
-            </a>
-<div>Fehlerdatenbank Unternehmenssoftware</div>
-<a href="projekt2.html" class="projekt-link">
-    <div class="projekt-box">Landing Page for luxury watches</div>
-</a>
-<div>Web-Service Cleaning</div>
-<div>E-Commerce App</div>
-<div>Landing Page Sugaring</div>
-<div>Webseite für die Staatliche Realschule</div>
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h2>Meine Arbeiten</h2>
+        <a href="projekt1.html" class="projekt-link">
+          <div class="projekt-box">Urban Gardening App</div>
+        </a>
+        <a href="projekt2.html" class="projekt-link">
+          <div class="projekt-box">Landing Page for luxury watches</div>
+        </a>
+        <a href="projekt3.html" class="projekt-link">
+          <div class="projekt-box">E-Commerce App</div>
+        </a>
+        <div>Fehlerdatenbank Unternehmenssoftware</div>
+        <div>Web-Service Cleaning</div>
+        <div>Landing Page Sugaring</div>
+        <div>Webseite für die Staatliche Realschule</div>
 
-<h2>Tools</h2>
-<div>Figma</div>
-<div>Canva</div>
-<div>Visme</div>
-<div>InDesign</div>
-<div>Illustrator</div>
-
-<h2>Sprachen</h2>
-<div>Deutsch</div>
-<div>Englisch</div>
-<div>Russisch</div>
-<div>Ukrainisch</div>
-<div>Arabisch</div>
-
- <h2>Über mich</h2>
-<h2><a href="kontakt.html">Kontakt</a></h2>
-        </aside>
+        <h2
+          style="color: #e3a723; font-weight: bold; text-decoration: underline"
+        >
+          Über mich
+        </h2>
+      </aside>
+      <div>
+        <a href="kontakt.html">
+          <button class="kontakt-button">Kontakt</button>
+        </a>
+        <div class="social-media">
+          <a
+            href="https://www.linkedin.com/in/julia-al-helbawi"
+            target="_blank"
+          >
+            <img src="Bilder/Linkedin.png" alt="LinkedIn" width="30" /> LinkedIn
+          </a>
+          <a href="https://www.behance.net/juliaal-helbawi1" target="_blank">
+            <img src="Bilder/behance.png" alt="Behance" width="30" /> Behance
+          </a>
+          <a href="https://www.instagram.com/dein-profil" target="_blank">
+            <img src="Bilder/instagram.png" alt="Instagram" width="30" />
+            Instagram
+          </a>
+        </div>
         <!-- Rechte Spalte: Lebenslauf -->
         <main class="resume">
-            <h1>Über mich</h1>
-
-            <h2>Werdegang</h2>
-            <ul>
-                <li><strong>UI/UX Designer</strong> – WholeWise <span class="date">11/2024 - bis heute</span></li>
-                <li><strong>Language Mediator für Deutsch, Ukrainisch und Russisch</strong> – Lokales Integrationszentrum Mönchengladbach <span class="date">3/2020 - bis heute</span></li>
-                <li><strong>DaZ-Unterricht</strong> – Grundschule Mönchengladbach <span class="date">8/2022 - 1/2024</span></li>
-                <li><strong>Inklusionsfachkraft</strong> – IDA-Hilfe Viersen <span class="date">12/2020 - 6/2021</span></li>
-                <li><strong>Freiberufliche Mitarbeiterin</strong> – Städtisches Jugendfreizeitzentrum PE12 in Mönchengladbach <span class="date">5/2015 - 3/2021</span></li>
-                <li><strong>IU Internationale Hochschule</strong> – UX Design <span class="date">1/2021 - bis heute</span></li>
-                <li><strong>GoIT IT Services und IT-Beratung</strong> – UI/UX Design <span class="date">9/2023 - 12/2023</span></li>
-                <li><strong>Impulse e.V. Fernschule</strong> – Gesundheitsberufe Wuppertal <span class="date">4/2019 - 12/2019</span></li>
-                <li><strong>Nationale Medizinische Universität Kiew</strong> – Ukraine <span class="date">2000 - 2007</span></li>
-            </ul>
-
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/julia-al-helbawi" target="_blank">
-                    <img src="Bilder/Linkedin.png" alt="LinkedIn" width="30"> LinkedIn
-                </a>
-                <a href="https://www.behance.net/juliaal-helbawi1" target="_blank">
-                    <img src="Bilder/behance.png" alt="Behance" width="30"> Behance
-                </a>
-                <a href="https://www.instagram.com/dein-profil" target="_blank">
-                    <img src="Bilder/instagram.png" alt="Instagram" width="30"> Instagram
-                </a>
-            </div>
+          <h1>Über mich</h1>
+          <h2>Tools:</h2>
+          <p>Figma, Canva, Visme, InDesign, Illustrator</p>
+          <h2>Sprachen:</h2>
+          <p>Deutsch, Englisch, Russisch, Ukrainisch, Arabisch</p>
+          <h2>Werdegang</h2>
+          <ul>
+            <li>
+              <strong>UI/UX Designer</strong> – WholeWise
+              <span class="date">11/2024 - bis heute</span>
+            </li>
+            <li>
+              <strong
+                >Language Mediator für Deutsch, Ukrainisch und Russisch</strong
+              >
+              – Lokales Integrationszentrum Mönchengladbach
+              <span class="date">3/2020 - bis heute</span>
+            </li>
+            <li>
+              <strong>DaZ-Unterricht</strong> – Grundschule Mönchengladbach
+              <span class="date">8/2022 - 1/2024</span>
+            </li>
+            <li>
+              <strong>Inklusionsfachkraft</strong> – IDA-Hilfe Viersen
+              <span class="date">12/2020 - 6/2021</span>
+            </li>
+            <li>
+              <strong>Freiberufliche Mitarbeiterin</strong> – Städtisches
+              Jugendfreizeitzentrum PE12 in Mönchengladbach
+              <span class="date">5/2015 - 3/2021</span>
+            </li>
+            <li>
+              <strong>IU Internationale Hochschule</strong> – UX Design
+              <span class="date">1/2021 - bis heute</span>
+            </li>
+            <li>
+              <strong>GoIT IT Services und IT-Beratung</strong> – UI/UX Design
+              <span class="date">9/2023 - 12/2023</span>
+            </li>
+            <li>
+              <strong>Impulse e.V. Fernschule</strong> – Gesundheitsberufe
+              Wuppertal <span class="date">4/2019 - 12/2019</span>
+            </li>
+            <li>
+              <strong>Nationale Medizinische Universität Kiew</strong> – Ukraine
+              <span class="date">2000 - 2007</span>
+            </li>
+          </ul>
         </main>
+        <div style="font-size: 12px">© 2025 by Julia Al-Helbawi</div>
+      </div>
     </div>
-</body>
+  </body>
+  <script src="script.js"></script>
 </html>

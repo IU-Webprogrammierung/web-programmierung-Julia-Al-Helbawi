@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Julia Al-Helbawi - Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "IBM Plex Sans", sans-serif;
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+    <a href="index.html"
+      >Mein Foto
+      <img
+        src="Bilder/mein-foto.png"
+        alt="Julia Al-Helbawi"
+        class="profilbild"
+        style="width: 180px; height: auto"
+      />
+    </a>
+    <a href="index.html" class="name-link">
+      <h1 class="bold">Julia Al-Helbawi</h1>
+    </a>
+    <h1 class="regular">UI/UX Designerin</h1>
+
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h2>Meine Arbeiten</h2>
+        <a href="projekt1.html" class="projekt-link">
+          <div class="projekt-box">Urban Gardening App</div>
+        </a>
+        <a href="projekt2.html" class="projekt-link">
+          <div class="projekt-box">Landing Page for luxury watches</div>
+        </a>
+        <div
+          style="color: #e3a723; font-weight: bold; text-decoration: underline"
+        >
+          E-Commerce App
+        </div>
+        <div>Fehlerdatenbank Unternehmenssoftware</div>
+        <div>Web-Service Cleaning</div>
+        <div>Landing Page Sugaring</div>
+        <div>Webseite für die Staatliche Realschule</div>
+
+        <h2><a href="ueber-mich.html">Über mich</a></h2>
+      </aside>
+      <div>
+        <a href="kontakt.html">
+          <button class="kontakt-button">Kontakt</button>
+        </a>
+        <div class="social-media">
+          <a
+            href="https://www.linkedin.com/in/julia-al-helbawi"
+            target="_blank"
+          >
+            <img src="Bilder/Linkedin.png" alt="LinkedIn" width="30" /> LinkedIn
+          </a>
+          <a href="https://www.behance.net/juliaal-helbawi1" target="_blank">
+            <img src="Bilder/behance.png" alt="Behance" width="30" /> Behance
+          </a>
+          <a href="https://www.instagram.com/dein-profil" target="_blank">
+            <img src="Bilder/instagram.png" alt="Instagram" width="30" />
+            Instagram
+          </a>
+        </div>
+        <button id="scrollTopBtn" onclick="scrollToTop()">&#11014;</button>
+
+        <!-- Rechte Spalte: Projekt -->
+        <main class="Arbeit">
+          <h1>E-Commerce App</h1>
+
+          <section class="projekte">
+            <div class="projekt-container">
+              <div class="projekt-bild">
+                <img
+                  class="projekt-bild"
+                  src="Bilder/blooms1.png"
+                  alt="Main Screens"
+                />
+              </div>
+              <div class="projekt">
+                <video
+                  class="video-container"
+                  src="video/blooms&baubles_video_klein.mov"
+                  controls
+                ></video>
+              </div>
+
+              <div class="projekt-bild">
+                <img
+                  class="projekt-bild"
+                  src="Bilder/blooms2.png"
+                  alt="About project"
+                />
+              </div>
+              <div class="projekt-bild">
+                <img
+                  class="projekt-bild"
+                  src="Bilder/blooms3.png"
+                  alt="Goals"
+                />
+              </div>
+              <div class="projekt-bild">
+                <img
+                  class="projekt-bild"
+                  src="Bilder/blooms4.png"
+                  alt=".Design Process"
+                />
+              </div>
+              <div class="projekt-bild">
+                <img
+                  class="projekt-bild"
+                  src="Bilder/blooms5.png"
+                  alt="Personas"
+                />
+              </div>
+              <div class="projekt-bild">
+                <img
+                  class="projekt-bild"
+                  src="Bilder/blooms6.png"
+                  alt="JTBD & Useflow"
+                />
+              </div>
+              <div class="projekt-bild">
+                <img
+                  class="projekt-bild"
+                  src="Bilder/blooms7.png"
+                  alt="Wireframes"
+                />
+              </div>
+              <div class="projekt-bild">
+                <img
+                  class="projekt-bild"
+                  src="Bilder/blooms8.png"
+                  alt="Onboarding"
+                />
+              </div>
+              <div class="projekt-bild">
+                <img
+                  class="projekt-bild"
+                  src="Bilder/blooms9.png"
+                  alt="Screens"
+                />
+              </div>
+              <div class="projekt-bild">
+                <img
+                  class="projekt-bild"
+                  src="Bilder/blooms10.png"
+                  alt="UI Kit"
+                />
+              </div>
+              <div class="projekt-bild">
+                <img
+                  class="projekt-bild"
+                  src="Bilder/blooms11.png"
+                  alt="App Store"
+                />
+              </div>
+            </div>
+            <h2>Das könnte Dir auch gefallen:</h2>
+            <div class="projekt-container">
+              <div class="projekt">
+                <a href="projekt2.html" target="_blank">
+                  <img
+                    src="Bilder/watches.png"
+                    alt="Landingpage Uhr"
+                  />Landingpage Uhr
+                </a>
+              </div>
+              <div class="projekt">
+                <a href="projekt1.html" target="_blank">
+                  <img
+                    src="Bilder/Urban_Gardening_App.png"
+                    alt="Urban Gardning App"
+                  />Urban Gardning App
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <div style="font-size: 12px">© 2025 by Julia Al-Helbawi</div>
+        </main>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

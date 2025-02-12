@@ -1,86 +1,131 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Julia Al-Helbawi - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        body {
-            font-family: 'IBM Plex Sans', sans-serif;
-        }
+      body {
+        font-family: "IBM Plex Sans", sans-serif;
+      }
     </style>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+    <a href="index.html"
+      >Mein Foto
+      <img
+        src="Bilder/mein-foto.png"
+        alt="Julia Al-Helbawi"
+        class="profilbild"
+        style="width: 180px; height: auto"
+      />
+    </a>
+    <a href="index.html" class="name-link">
+      <h1 class="bold">Julia Al-Helbawi</h1>
+    </a>
+    <h1 class="regular">UI/UX Designerin</h1>
+
     <div class="container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <a href="index.html">
-                <img src="Bilder/mein-foto.png" alt="Julia Al-Helbawi" class="profilbild" style="width: 180px; height: auto;">
-            </a>
-            <a href="index.html" class="name-link">
-                <h1 class="bold">Julia Al-Helbawi</h1>
-            </a>
-            <h1 class="regular">UI/UX Designerin</h1>
-
-            <h2>Meine Arbeiten</h2>
-            <a href="projekt1.html" class="projekt-link">
-                <div class="projekt-box">Urban Gardening App</div>
-            </a>
-<div>Fehlerdatenbank Unternehmenssoftware</div>
-<div>Landing Page for luxury watches</div>
-<div>Web-Service Cleaning</div>
-<div>E-Commerce App</div>
-<div>Landing Page Sugaring</div>
-<div>Webseite für die Staatliche Realschule</div>
-
-<h2>Tools</h2>
-<div>Figma</div>
-<div>Canva</div>
-<div>Visme</div>
-<div>InDesign</div>
-<div>Illustrator</div>
-
-<h2>Sprachen</h2>
-<div>Deutsch</div>
-<div>Englisch</div>
-<div>Russisch</div>
-<div>Ukrainisch</div>
-<div>Arabisch</div>
-
-<h2><a href="ueber-mich.html">Über mich</a></h2>
-<h2><a href="kontakt.html">Kontakt</a></h2>
-        </aside>
-
-         <!-- Rechte Spalte: Projekt -->
-         <main class="Arbeit">
-            <h1>Landing Page for luxury watches</h1>
-            <section class="projekte">
-                <div class="projekt-container">
-                    <div class="projekt-bild"><img class="projekt-bild" src="Bilder/landing-page-watches.jpg" alt="Präsentation der Webseite auf Devices"></div>
-                    <div class="projekt"><video class="video-container" src="video/Urban-Gardening-App-Onboarding-Video.mov" controls></video></div>
-                    <div class="projekt-bild"><img class="projekt-bild" src="Bilder/landing-page-watches-desktop.png" alt="Desktopvariante der Webseite mit Uhr"></div>
-                    <div class="projekt-bild"><img class="projekt-bild" src="Bilder/landing-page-watches-mobile.png" alt="Mobile Variante der Webseite mit Uhr"></div>
-                </div>
-                <p>Das könnte dir auch  gefallen:</p>
-                <div class="projekt-container">
-                    <div class="projekt"><img src="Bilder/Fehlerdatenbank.png" alt="Unternehmenssoftware Fehlerdatenbank"></div>
-                    <div class="projekt"><img src="Bilder/e-commerce.png" alt="E-Commerce App"></div>
-                    
-                    </div>
-            </section>
-
-        <div class="social-media">
-            <a href="https://www.linkedin.com/in/julia-al-helbawi" target="_blank">
-                <img src="Bilder/Linkedin.png" alt="LinkedIn" width="30"> LinkedIn
-            </a>
-            <a href="https://www.behance.net/juliaal-helbawi1" target="_blank">
-                <img src="Bilder/behance.png" alt="Behance" width="30"> Behance
-            </a>
-            <a href="https://www.instagram.com/dein-profil" target="_blank">
-                <img src="Bilder/instagram.png" alt="Instagram" width="30"> Instagram
-            </a>
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h2>Meine Arbeiten</h2>
+        <a href="projekt1.html" class="projekt-link">
+          <div class="projekt-box">Urban Gardening App</div>
+        </a>
+        <div
+          style="color: #e3a723; font-weight: bold; text-decoration: underline"
+        >
+          Landing Page for luxury watches
         </div>
- </body>
-  </html>
+        <a href="projekt3.html" class="projekt-link">
+          <div class="projekt-box">E-Commerce App</div>
+        </a>
+        <div>Fehlerdatenbank Unternehmenssoftware</div>
+        <div>Web-Service Cleaning</div>
+        <div>Landing Page Sugaring</div>
+        <div>Webseite für die Staatliche Realschule</div>
+
+        <h2><a href="ueber-mich.html">Über mich</a></h2>
+      </aside>
+      <div>
+        <a href="kontakt.html">
+          <button class="kontakt-button">Kontakt</button>
+        </a>
+        <div class="social-media">
+          <a
+            href="https://www.linkedin.com/in/julia-al-helbawi"
+            target="_blank"
+          >
+            <img src="Bilder/Linkedin.png" alt="LinkedIn" width="30" /> LinkedIn
+          </a>
+          <a href="https://www.behance.net/juliaal-helbawi1" target="_blank">
+            <img src="Bilder/behance.png" alt="Behance" width="30" /> Behance
+          </a>
+          <a href="https://www.instagram.com/dein-profil" target="_blank">
+            <img src="Bilder/instagram.png" alt="Instagram" width="30" />
+            Instagram
+          </a>
+        </div>
+        <button id="scrollTopBtn" onclick="scrollToTop()">&#11014;</button>
+
+        <!-- Rechte Spalte: Projekt -->
+        <main class="Arbeit">
+          <h1>Landing Page for luxury watches</h1>
+          <section class="projekte">
+            <div class="projekt-container">
+              <div class="projekt-bild">
+                <img
+                  class="projekt-bild"
+                  src="Bilder/landing-page-watches.jpg"
+                  alt="Präsentation der Webseite auf Devices"
+                />
+              </div>
+              <div class="projekt-bild">
+                <img
+                  class="projekt-bild"
+                  src="Bilder/video-bild-wireframes.png"
+                  alt="Video der Webseite mit Uhr"
+                />
+              </div>
+              <div class="projekt-bild">
+                <img
+                  class="projekt-bild"
+                  src="Bilder/landing-page-watches-desktop.png"
+                  alt="Desktopvariante der Webseite mit Uhr"
+                />
+              </div>
+            </div>
+            <h2>Das könnte Dir auch gefallen:</h2>
+            <div class="projekt-container">
+              <div class="projekt">
+                <a href="projekt1.html" target="_blank">
+                  <img
+                    src="Bilder/Urban_Gardening_App.png"
+                    alt="Urban Gardening App"
+                  />Urban Gardening App
+                </a>
+              </div>
+              <div class="projekt">
+                <a href="projekt3.html" target="_blank">
+                  <img
+                    src="Bilder/e-commerce.png"
+                    alt="E-Commerce App"
+                  />E-Commerce App
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <div style="font-size: 12px">© 2025 by Julia Al-Helbawi</div>
+        </main>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
