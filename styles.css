@@ -18,7 +18,7 @@ h2 {
 
 p {
   font-size: 14px;
-  font: weight 400px;
+  font-weight: 400;
   color: #020202;
 }
 
@@ -209,6 +209,25 @@ textarea {
 
 @media screen and (max-width: 768px) {
   .projekt-bild img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .content {
+    padding: 5px;
+  }
+
+  .projekt-container {
+    gap: 10px;
+  }
+
+  .projekt img {
+    width: 100%;
+    height: auto;
+  }
+
+  .kontakt-button {
     width: 100%;
   }
 }
