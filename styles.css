@@ -48,6 +48,7 @@ p {
   list-style-type: none;
   padding: 0;
 }
+
 .profilbild {
   width: 180px;
   height: auto;
@@ -71,6 +72,7 @@ h1.regular {
   border-radius: 4px;
   cursor: pointer;
 }
+
 .kontakt-button:hover {
   background-color: #222324;
 }
@@ -91,11 +93,6 @@ h1.regular {
   display: flex;
   align-items: center;
   gap: 20px;
-}
-
-.projekt img {
-  width: 456px;
-  height: auto;
 }
 
 .projekt p {
@@ -155,33 +152,17 @@ h2 a {
   .sidebar {
     display: none;
   }
-}
 
-.sidebar.active {
-  display: block;
-}
+  .projekt-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-label {
-  font-size: 14px;
-  display: block;
-  margin-bottom: 5px;
-}
+  .projekt-bild img {
+    width: 100%;
+  }
 
-.form-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
-}
-
-input,
-textarea {
-  width: 100%;
-  max-width: 400px;
-  padding: 8px;
-}
-
-/* Mobile Ansicht */
-@media (max-width: 600px) {
   .content {
     padding: 10px;
   }
@@ -189,27 +170,6 @@ textarea {
   input,
   textarea {
     max-width: 100%;
-  }
-}
-
-.projekt-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.projekt-bild {
-  margin: 10px 0;
-}
-
-.projekt-bild img {
-  width: 782px;
-  height: auto;
-}
-
-@media screen and (max-width: 768px) {
-  .projekt-bild img {
-    width: 100%;
   }
 }
 
@@ -231,3 +191,4 @@ textarea {
     width: 100%;
   }
 }
+
