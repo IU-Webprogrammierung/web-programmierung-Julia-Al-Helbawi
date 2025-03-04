@@ -5,9 +5,22 @@ body {
 }
 
 h1 {
+  font-weight: 400;
   font-size: 32px;
-  font-weight: 700;
   color: #020202;
+}
+
+.name-link h1 {
+  font-weight: 700;
+}
+
+.name-link {
+  text-decoration: none;
+  color: #020202;
+}
+
+.name-link:hover {
+  color: gray;
 }
 
 h2 {
@@ -43,6 +56,12 @@ p {
   margin-left: 10px;
 }
 
+.projekt-link.active {
+  color: #e3a723; 
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .sidebar ul,
 .resume ul {
   list-style-type: none;
@@ -52,14 +71,6 @@ p {
 .profilbild {
   width: 180px;
   height: auto;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-h1.regular {
-  font-weight: 400;
 }
 
 .kontakt-button {
@@ -108,15 +119,6 @@ h2 a {
 
 .projekt-link:hover .projekt-box {
   color: #555;
-}
-
-.name-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.name-link:hover {
-  color: gray;
 }
 
 .projekt-link {
