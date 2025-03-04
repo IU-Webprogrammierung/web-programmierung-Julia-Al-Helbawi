@@ -10,17 +10,15 @@ h1 {
   color: #020202;
 }
 
-.name-link h1 {
-  font-weight: 700;
-}
-
 .name-link {
   text-decoration: none;
   color: #020202;
-}
-
-.name-link:hover {
-  color: gray;
+  & h1 {
+    font-weight: 700;
+  }
+  &:hover {
+    color: gray;
+  }
 }
 
 h2 {
@@ -35,37 +33,52 @@ p {
   color: #020202;
 }
 
-.sidebar h1 {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 10px;
+.sidebar {
+  & h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  & h2,
+  .resume & h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+
+  & div,
+  & ul li,
+  .resume & ul li {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 10px;
+  }
+
+  & ul {
+    list-style-type: none;
+    padding: 0;
+  }
 }
 
-.sidebar h2,
-.resume h2 {
-  font-size: 16px;
-  font-weight: 600;
-  margin-top: 20px;
-}
-
-.sidebar div,
-.sidebar ul li,
-.resume ul li {
-  font-size: 16px;
-  font-weight: 400;
-  margin-left: 10px;
+.projekt-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .projekt-link.active {
-  color: #e3a723; 
+  color: #e3a723;
   font-weight: bold;
   text-decoration: underline;
 }
 
-.sidebar ul,
-.resume ul {
-  list-style-type: none;
-  padding: 0;
+&.hover .projekt-box {
+  color: #555;
+}
+
+&:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 .profilbild {
@@ -82,10 +95,10 @@ p {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
 
-.kontakt-button:hover {
-  background-color: #222324;
+  &:hover {
+    background-color: #222324;
+  }
 }
 
 .projekt-container {
@@ -94,34 +107,19 @@ p {
   gap: 20px;
 }
 
-.projekt img {
-  width: 456px;
-  height: 143px;
-  object-fit: cover;
-}
-
 .projekt {
   display: flex;
   align-items: center;
   gap: 20px;
-}
 
-.projekt p {
-  font-size: 16px;
-  color: #333;
-  max-width: 400px;
+  & p {
+    font-size: 16px;
+    color: #333;
+    max-width: 400px;
+  }
 }
 
 h2 a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.projekt-link:hover .projekt-box {
-  color: #555;
-}
-
-.projekt-link {
   text-decoration: none;
   color: inherit;
 }
@@ -209,11 +207,11 @@ h2 a {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
 
-.scroll-to-top:hover {
-  background-color: #222324;
-  color: #f9f9f9;
+  &:hover {
+    background-color: #222324;
+    color: #f9f9f9;
+  }
 }
 
 .copyright-text {
