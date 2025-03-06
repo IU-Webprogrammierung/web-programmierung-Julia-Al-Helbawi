@@ -13,12 +13,14 @@ h1 {
 .name-link {
   text-decoration: none;
   color: #020202;
-  & h1 {
-    font-weight: 700;
-  }
-  &:hover {
-    color: gray;
-  }
+}
+
+.name-link h1 {
+  font-weight: 700;
+}
+
+.name-link:hover {
+  color: gray;
 }
 
 h2 {
@@ -34,28 +36,25 @@ p {
 }
 
 .sidebar {
-  & h1 {
+  h1 {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 10px;
   }
 
-  & h2,
-  .resume & h2 {
+  h2 {
     font-size: 16px;
     font-weight: 600;
     margin-top: 20px;
   }
 
-  & div,
-  & ul li,
-  .resume & ul li {
+  div, ul li {
     font-size: 16px;
     font-weight: 400;
     margin-left: 10px;
   }
 
-  & ul {
+  ul {
     list-style-type: none;
     padding: 0;
   }
@@ -72,18 +71,14 @@ p {
   text-decoration: underline;
 }
 
-&.hover .projekt-box {
-  color: #555;
-}
-
-&:hover {
-  text-decoration: none;
-  color: inherit;
-}
-
 .profilbild {
   width: 180px;
   height: auto;
+}
+
+.sidebar a {
+  display: block;
+  margin-top: 20px;
 }
 
 .kontakt-button {
@@ -95,10 +90,11 @@ p {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-top: 20px; 
+}
 
-  &:hover {
-    background-color: #222324;
-  }
+.kontakt-button:hover {
+  background-color: #222324;
 }
 
 .projekt-container {
@@ -111,12 +107,12 @@ p {
   display: flex;
   align-items: center;
   gap: 20px;
+}
 
-  & p {
-    font-size: 16px;
-    color: #333;
-    max-width: 400px;
-  }
+.projekt p {
+  font-size: 16px;
+  color: #333;
+  max-width: 400px;
 }
 
 h2 a {
@@ -142,6 +138,22 @@ h2 a {
   display: none;
 }
 
+.container {
+  display: flex; /* Aktiviert Flexbox für die Anordnung der Elemente */
+  gap: 20px; /* Zwischenabstand zwischen Sidebar und Inhalt */
+}
+
+.sidebar {
+  width: 30%; /* Sidebar nimmt 30% der Breite ein */
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.content {
+  width: 70%; /* Hauptinhalt nimmt 70% der Breite ein */
+  padding: 20px;
+}
+
 @media (max-width: 768px) {
   .hamburger-menu {
     display: block;
@@ -163,13 +175,13 @@ h2 a {
     width: 100%;
   }
 
-  .content {
-    padding: 10px;
+  .container {
+    flex-direction: column; /* Auf kleinen Bildschirmen werden die Elemente untereinander angeordnet */
   }
 
-  input,
-  textarea {
-    max-width: 100%;
+  .sidebar,
+  .content {
+    width: 100%; /* Beide nehmen volle Breite ein */
   }
 }
 
@@ -207,11 +219,11 @@ h2 a {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
 
-  &:hover {
-    background-color: #222324;
-    color: #f9f9f9;
-  }
+.scroll-to-top:hover {
+  background-color: #222324;
+  color: #f9f9f9;
 }
 
 .copyright-text {
