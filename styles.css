@@ -1,7 +1,9 @@
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 24px;
-  background-color: #fff;
 }
 
 h1 {
@@ -42,14 +44,23 @@ h2 {
 
 p {
   font-size: 14px;
+  text-align: center;
   font-weight: 400;
   color: #020202;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.intro {
+  width: 918px;
+  height: auto;
+  flex-shrink: 0;
+  background-color: #fafafa;
 }
 
 .sidebar {
-  display: block; /* Sidebar auf Desktop sichtbar */
-  width: 30%;
-  padding: 20px;
+  width: 25%;
+  padding-right: 20px;
 }
 
 .sidebar h1 {
@@ -150,146 +161,164 @@ h2 a {
   margin: 0 auto;
 }
 
+/* Hamburger Menü */
 .hamburger-menu {
   display: none; /* Standardmäßig versteckt */
   font-size: 30px;
   cursor: pointer;
-  background: none;
-  border: none;
+  position: relative;
+  z-index: 20;
 }
 
-.hamburger-menu.open + .sidebar {
+.hamburger-menu.open .line:nth-child(1) {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 8px;
+}
+
+.hamburger-menu.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.open .line:nth-child(3) {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: -8px;
+}
+
+.hamburger-menu .line {
   display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: all 0.3s ease;
 }
 
-.container {
-  display: flex;
-  gap: 20px;
-
-  .content {
-    width: 70%;
-    padding: 20px;
-    background-color: #fafafa;
-  }
-
-  @media (max-width: 768px) {
-    .hamburger-menu {
-      display: block;
-      font-size: 30px;
-      cursor: pointer;
-    }
-
-    .sidebar {
-      display: none;
-    }
-
-    .sidebar.open {
-      display: block;
-    }
-
-    .projekt-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .projekt-bild img {
-      width: 100%;
-      height: auto;
-    }
-
-    .container {
-      flex-direction: column;
-    }
-
-    .sidebar,
-    .content {
-      width: 100%;
-      display: flex;
-      height: auto;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 30px;
-      flex-shrink: 0;
-    }
-  }
-
-  @media (max-width: 360px) {
-    .content {
-      padding: 5px;
-    }
-
-    .projekt-container {
-      gap: 10px;
-    }
-
-    .projekt img {
-      width: 100%;
-      height: auto;
-    }
-
-    .kontakt-button {
-      width: 100%;
-    }
-  }
-
-  .scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #f9f9f9;
-    color: #020202;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
-    display: none;
-    justify-content: center;
-    align-items: center;
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block; /* Sichtbar im mobilen Zustand */
+    font-size: 30px;
     cursor: pointer;
+    background: none;
+    border: none;
   }
 
-  .scroll-to-top:hover {
-    background-color: #222324;
-    color: #f9f9f9;
+  .sidebar {
+    display: none; /* Sidebar wird standardmäßig versteckt */
   }
 
-  .copyright-text {
-    font-size: 12px;
+  .sidebar.open {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: white;
+    padding: 20px;
+    z-index: 10;
   }
 
-  .social-media a span {
-    visibility: hidden;
-    font-size: 0;
+  .sidebar ul {
+    gap: 10px;
   }
 
-  .social-media a img {
-    margin-right: 10px;
+  .container {
+    flex-direction: column;
   }
 
-  .social-media a:hover span {
-    visibility: visible;
-    font-size: 12px;
-  }
-
-  .social-media {
+  .projekt-container {
     display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-  }
-
-  .social-media a {
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 5px;
-    text-decoration: none;
-    color: inherit;
+    gap: 20px;
   }
 
-  .social-media img {
-    width: 30px;
+  .projekt-bild img {
+    width: 100%;
     height: auto;
   }
+
+  .kontakt-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .content {
+    padding: 5px;
+  }
+
+  .projekt-container {
+    gap: 10px;
+  }
+
+  .projekt img {
+    width: 100%;
+    height: auto;
+  }
+
+  .kontakt-button {
+    width: 100%;
+  }
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f9f9f9;
+  color: #020202;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.scroll-to-top:hover {
+  background-color: #222324;
+  color: #f9f9f9;
+}
+
+.copyright-text {
+  font-size: 12px;
+}
+
+.social-media a span {
+  visibility: hidden;
+  font-size: 0;
+}
+
+.social-media a img {
+  margin-right: 10px;
+}
+
+.social-media a:hover span {
+  visibility: visible;
+  font-size: 12px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-media a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-media img {
+  width: 30px;
+  height: auto;
 }
