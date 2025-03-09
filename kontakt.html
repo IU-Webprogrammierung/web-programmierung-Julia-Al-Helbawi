@@ -49,58 +49,74 @@
         </ul>
         <h2><a href="ueber-mich.html">Über mich</a></h2>
       </aside>
-      <div class="social-media">
-        <a href="https://www.linkedin.com/in/julia-al-helbawi" target="_blank">
-          <img src="Bilder/Linkedin.png" alt="LinkedIn" width="30" /> LinkedIn
-        </a>
-        <a href="https://www.behance.net/juliaal-helbawi1" target="_blank">
-          <img src="Bilder/behance.png" alt="Behance" width="30" /> Behance
-        </a>
-        <a href="https://www.instagram.com/dein-profil" target="_blank">
-          <img src="Bilder/instagram.png" alt="Instagram" width="30" />
-          Instagram
-        </a>
-      </div>
+      <div>
+        <div class="social-media">
+          <a
+            href="https://www.linkedin.com/in/julia-al-helbawi"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <img src="Bilder/Linkedin.png" alt="LinkedIn" width="30" />
+            <span>LinkedIn</span>
+          </a>
+          <a
+            href="https://www.behance.net/juliaal-helbawi1"
+            target="_blank"
+            aria-label="Behance"
+          >
+            <img src="Bilder/behance.png" alt="Behance" width="30" />
+            <span>Behance</span>
+          </a>
+          <a
+            href="https://www.instagram.com/dein-profil"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <img src="Bilder/instagram.png" alt="Instagram" width="30" />
+            <span>Instagram</span>
+          </a>
+        </div>
 
-      <!-- Kontaktformular -->
-      <style>
-        label {
-          font-size: 14px;
-        }
-      </style>
-      <section class="content">
-        <h1>Kontakt</h1>
-        <h2>Ich freue mich auf Deine Nachricht!</h2>
-        <form action="kontakt.php" method="post">
-          <div class="form-group">
-            <label for="vorname">Vorname:</label>
-            <input type="text" id="vorname" name="vorname" required />
-          </div>
-          <div class="form-group">
-            <label for="nachname">Nachname:</label>
-            <input type="text" id="nachname" name="nachname" required />
-          </div>
-          <div class="form-group">
-            <label for="email">E-Mail-Adresse:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-group">
-            <label for="telefon">Telefonnummer:</label>
-            <input type="tel" id="telefon" name="telefon" />
-          </div>
-          <div class="form-group">
-            <label for="nachricht">Deine Nachricht an mich:</label>
-            <textarea
-              id="nachricht"
-              name="nachricht"
-              rows="5"
-              required
-            ></textarea>
-          </div>
-          <button type="submit" class="kontakt-button">Abschicken</button>
-        </form>
-      </section>
-      <div class="copyright-text">© 2025 by Julia Al-Helbawi</div>
+        <!-- Kontaktformular -->
+        <style>
+          label {
+            font-size: 14px;
+          }
+        </style>
+        <section class="content">
+          <h1>Kontakt</h1>
+          <h2>Ich freue mich auf Deine Nachricht!</h2>
+          <form action="kontakt.php" method="post">
+            <div class="form-group">
+              <label for="vorname">Vorname:</label>
+              <input type="text" id="vorname" name="vorname" required />
+            </div>
+            <div class="form-group">
+              <label for="nachname">Nachname:</label>
+              <input type="text" id="nachname" name="nachname" required />
+            </div>
+            <div class="form-group">
+              <label for="email">E-Mail-Adresse:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="telefon">Telefonnummer:</label>
+              <input type="tel" id="telefon" name="telefon" />
+            </div>
+            <div class="form-group">
+              <label for="nachricht">Deine Nachricht an mich:</label>
+              <textarea
+                id="nachricht"
+                name="nachricht"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="kontakt-button">Abschicken</button>
+          </form>
+        </section>
+        <div class="copyright-text">© 2025 by Julia Al-Helbawi</div>
+      </div>
     </div>
   </body>
 </html>
