@@ -46,40 +46,43 @@ h2 {
   color: #020202;
 }
 
-.social-media a span {
-  visibility: hidden;
-  font-size: 0;
-}
-
-.social-media a img {
-  margin-right: 10px;
-  margin-top: 10px;
-}
-
-.social-media a:hover span {
-  visibility: visible;
-  font-size: 12px;
-}
-
 .social-media {
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin-top: -300px;
+  margin-top: 20px;
 }
 
 .social-media a {
   display: flex;
+  flex-direction: column; 
   align-items: center;
-  gap: 5px;
   text-decoration: none;
   color: inherit;
+  height: 50px; 
+  overflow: hidden; 
 }
 
-.social-media img {
+
+.social-media a span {
+  font-size: 12px;
+  opacity: 0;
+  height: 0;
+  transition: opacity 0.3s ease, height 0.3s ease;
+}
+
+.social-media a img {
   width: 30px;
   height: auto;
+  margin-bottom: 5px; 
+
 }
+
+.social-media a:hover span {
+  opacity: 1;
+  height: auto;
+}
+
 
 p {
   font-size: 14px;
@@ -160,8 +163,10 @@ footer {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
+  
   .container {
     flex-direction: column;
+    margin-top:0px;
   }
 
   .sidebar {
@@ -176,7 +181,7 @@ footer {
   }
 
   .portfolio-grid {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
 }
 
@@ -264,7 +269,7 @@ h2 a {
 }
 
 .hamburger-menu {
-  display: none; 
+  display: none;
   font-size: 30px;
   cursor: pointer;
   background: none;
@@ -386,21 +391,21 @@ h2 a {
 @media (max-width: 768px) {
   .container {
     display: flex;
-    flex-direction: column; 
-    gap: 60px; 
+    flex-direction: column;
+    gap: 60px;
   }
 
   .sidebar {
-    order: -1; 
-    padding-bottom: 60px; 
+    order: -1;
+    padding-bottom: 60px;
   }
 
   .kontakt-button {
-    order: 0; 
+    order: 0;
   }
 
   .content {
-    order: 1; 
-    margin-top: 6 0px; 
+    order: 1;
+    margin-top: 6 0px;
   }
 }
