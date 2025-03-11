@@ -48,21 +48,21 @@ h2 {
 
 .social-media {
   display: flex;
-  justify-content: center;
-  gap: 15px;
+  justify-content: right;
+  gap: 5px;
   margin-top: 20px;
+  margin-right: 20px;
 }
 
 .social-media a {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   text-decoration: none;
   color: inherit;
-  height: 50px; 
-  overflow: hidden; 
+  height: 50px;
+  overflow: hidden;
 }
-
 
 .social-media a span {
   font-size: 12px;
@@ -74,15 +74,13 @@ h2 {
 .social-media a img {
   width: 30px;
   height: auto;
-  margin-bottom: 5px; 
-
+  margin-bottom: 5px;
 }
 
 .social-media a:hover span {
   opacity: 1;
   height: auto;
 }
-
 
 p {
   font-size: 14px;
@@ -163,10 +161,9 @@ footer {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-  
   .container {
     flex-direction: column;
-    margin-top:0px;
+    margin-top: 0px;
   }
 
   .sidebar {
@@ -174,6 +171,7 @@ footer {
     border-right: none;
     border-bottom: 2px solid #e0e0e0;
     padding-bottom: 10px;
+    margin-left: 50px;
   }
 
   .content {
@@ -190,7 +188,36 @@ footer {
   padding: 0;
   font-size: 16px;
   font-weight: 400;
-  margin-left: 10px;
+  margin-left: auto;
+}
+
+.tools {
+  width: 70%;
+  padding: 20px;
+  background-color: #fafafa;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.werdegang {
+  width: 70%;
+  padding: 20px;
+  background-color: #fafafa;
+  margin-top: 10px;
+}
+
+.über-mich-item {
+  width: auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.date {
+  display: flex;
+  justify-content: right;
+  gap: 5px;
+  margin-top: 20px;
+  margin-right: 20px;
 }
 
 .projekt-link {
@@ -207,6 +234,8 @@ footer {
 .profilbild {
   width: 180px;
   height: auto;
+  margin-top: 20px;
+  margin-left: 50px;
 }
 
 .kontakt-button {
@@ -219,6 +248,7 @@ footer {
   border-radius: 4px;
   cursor: pointer;
   margin-top: 20px;
+  margin-left: 50px;
 }
 
 .kontakt-button:hover {
@@ -287,11 +317,6 @@ h2 a {
 }
 
 .container .content {
-  width: 70%;
-  padding: 20px;
-  background-color: #fafafa;
-}
-.resume {
   width: 70%;
   padding: 20px;
   background-color: #fafafa;
@@ -408,4 +433,20 @@ h2 a {
     order: 1;
     margin-top: 6 0px;
   }
+}
+
+.section-title {
+  display: inline; 
+  margin-right: 10px; 
+}
+
+.section-content {
+  display: inline; 
+  font-size: 16px;
+}
+
+h2.section-title {
+  display: block; 
+  margin-bottom: 5px; 
+  font-size: 24px;
 }
