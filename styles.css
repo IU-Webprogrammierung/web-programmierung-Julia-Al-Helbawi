@@ -50,8 +50,8 @@ h2 {
   display: flex;
   justify-content: right;
   gap: 5px;
-  margin-top: 20px;
-  margin-right: 20px;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 .social-media a {
@@ -131,6 +131,7 @@ p {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 }
 
 .intro {
@@ -192,7 +193,7 @@ footer {
 }
 
 .tools {
-  width: 70%;
+  width: auto;
   padding: 20px;
   background-color: #fafafa;
   margin-top: 50px;
@@ -200,7 +201,8 @@ footer {
 }
 
 .werdegang {
-  width: 70%;
+  width: 100%;
+  height: auto;
   padding: 20px;
   background-color: #fafafa;
   margin-top: 10px;
@@ -218,6 +220,7 @@ footer {
   gap: 5px;
   margin-top: 20px;
   margin-right: 20px;
+  margin-left: auto;
 }
 
 .projekt-link {
@@ -235,11 +238,11 @@ footer {
   width: 180px;
   height: auto;
   margin-top: 20px;
-  margin-left: 50px;
+  margin-left: auto;
 }
 
 .kontakt-button {
-  width: 120px;
+  width: 200px;
   height: 36px;
   font-size: 16px;
   background-color: #e3a723;
@@ -248,7 +251,7 @@ footer {
   border-radius: 4px;
   cursor: pointer;
   margin-top: 20px;
-  margin-left: 50px;
+  margin-left: auto;
 }
 
 .kontakt-button:hover {
@@ -436,17 +439,45 @@ h2 a {
 }
 
 .section-title {
-  display: inline; 
-  margin-right: 10px; 
+  display: inline;
+  margin-right: 10px;
 }
 
 .section-content {
-  display: inline; 
+  display: inline;
   font-size: 16px;
 }
 
 h2.section-title {
-  display: block; 
-  margin-bottom: 5px; 
+  display: block;
+  margin-bottom: 5px;
   font-size: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  flex-shrink: 0;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
 }
