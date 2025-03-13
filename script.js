@@ -1,12 +1,12 @@
 function toggleMenu() {
-  const sidebar = document.querySelector('.sidebar');
+  const sidebar = document.querySelector('.sidebar-menu');
   const menuIcon = document.querySelector('.hamburger-menu');
   
  
   sidebar.classList.toggle('open');
   
   
-  menuIcon.textContent = sidebar.classList.contains('open') ? '✖' : '☰'; 
+  menuIcon.textContent = sidebar.classList.contains('open') ? 'x' : '☰'; 
 }
 
 
