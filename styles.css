@@ -139,7 +139,6 @@ p {
   margin-bottom: 20px;
 }
 
-/* Portfolio Grid */
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -150,6 +149,15 @@ p {
   width: 100%;
   display: block;
   border-radius: 5px;
+}
+
+.hamburger-menu {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: all 0.3s ease;
 }
 
 /* Footer */
@@ -175,6 +183,10 @@ footer {
     margin-left: 50px;
   }
 
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
   .content {
     width: 100%;
   }
@@ -190,14 +202,6 @@ footer {
   font-size: 16px;
   font-weight: 400;
   margin-left: auto;
-}
-
-.tools {
-  width: auto;
-  padding: 20px;
-  background-color: #fafafa;
-  margin-top: 50px;
-  margin-bottom: 10px;
 }
 
 .werdegang {
@@ -288,29 +292,20 @@ h2 a {
 }
 
 .video-container {
-  width: 782px;
+  width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
 .projekt-bild {
-  width: 782px;
+  width: 70%;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
-.hamburger-menu {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-  background: none;
-  border: none;
-  transition: all 0.3s ease;
-}
-
-.hamburger-menu.open + .sidebar {
+.sidebar.open {
   display: block;
 }
 
@@ -330,6 +325,13 @@ h2 a {
     display: block;
     font-size: 30px;
     cursor: pointer;
+    background: none;
+    border: none;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger-menu.open {
+    transform: rotate(90deg); /* Beispiel für eine Animation, falls gewünscht */
   }
 
   .sidebar {

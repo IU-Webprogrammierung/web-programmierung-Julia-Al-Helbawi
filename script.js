@@ -9,6 +9,8 @@ function toggleMenu() {
   menuIcon.textContent = sidebar.classList.contains('open') ? '✖' : '☰'; 
 }
 
+
+
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
