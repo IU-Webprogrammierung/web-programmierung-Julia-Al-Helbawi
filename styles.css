@@ -8,7 +8,9 @@ body {
   display: flex;
   justify-content: center;
   background-color: #fff;
+  overflow: visible;
 }
+
 
 .sr-only {
   position: absolute;
@@ -26,6 +28,13 @@ h1 {
   font-size: 32px;
   color: #020202;
   margin-bottom: 0;
+}
+
+.profil-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
 }
 
 .job-title {
@@ -54,7 +63,8 @@ h2 {
 
 .social-media {
   display: flex;
-  justify-content: right;
+  margin-left: auto;
+  justify-content: left;
   gap: 5px;
   margin-top: 50px;
   margin-right: 100px;
@@ -150,6 +160,7 @@ p {
 
 .sidebar {
   position: fixed;
+  z-index: 500;
   width: 25%;
   background: #ffffff;
   padding: 20px;
@@ -157,7 +168,7 @@ p {
   flex-direction: column;
   text-align: left;
   padding-bottom: 10px;
-  margin-left: 10px;
+  margin-left: 50px;
 }
 
 .sidebar h1 {
@@ -172,13 +183,14 @@ p {
   font-weight: 200;
   margin-bottom: 0px;
   margin-left: 10px;
+  margin-top:  -20px;;
 }
 
 .sidebar h2 {
   font-size: 16px;
   font-weight: 600;
-  margin-top: 20px;
-  margin-left: 0;
+  margin-top: 50px;
+  margin-left: 20px;
 }
 
 .sidebar div,
@@ -194,7 +206,7 @@ p {
   list-style-type: none;
   padding: 0;
   text-align: left;
-  margin-left: 10px;
+  margin-left: 40px;
 }
 
 .intro {
@@ -214,8 +226,15 @@ p {
   border-radius: 5px;
 }
 
+.form-group {
+  width: 100%;
+  display: block;
+}
+
 .hamburger-menu {
   display: none;
+  z-index: 1000;
+  position: relative;
   font-size: 30px;
   cursor: pointer;
   background: none;
@@ -233,14 +252,15 @@ p {
 }
 
 .content {
-  width: 75%;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: 500px;
+  margin-top: 20px;
+  margin-right: 500px;
   flex-grow: 1;
-  max-width: 100%;
+  max-width: 75%;
 }
 
 .content-über-mich {
@@ -315,7 +335,10 @@ p {
   width: 70%;
   padding: 20px;
   background-color: #fafafa;
+  text-align: center;
+  item-a
 }
+
 
 .projekt-container {
   display: flex;
@@ -361,6 +384,8 @@ h2 a {
 .container {
   display: flex;
   gap: 100px;
+  margin-right: 100px;
+margin-top: 50;
 }
 
 .container .content {
@@ -394,14 +419,16 @@ h2 a {
 .copyright-text {
   font-size: 12px;
   margin-top: 30px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  max-width: 1000px;
   flex-shrink: 0;
+ margin-right: 20px;
 }
 
 label {
@@ -417,7 +444,7 @@ textarea {
   margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 textarea {
@@ -430,7 +457,7 @@ footer {
   text-align: center;
   margin-top: 20px;
   padding: 10px;
-  background: #f1f1f1;
+  background: #ffffff;
 }
 
 /* Responsive Design */
@@ -440,8 +467,24 @@ footer {
     margin-top: 0px;
   }
 
+  .profil-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+    width: 100%;
+  
+  }
+
+  .name-job-container {
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 0;
+  }
+
   .content {
     width: 100%;
+    margin-top: 2000px;
   }
 
   .portfolio-grid {
@@ -455,16 +498,30 @@ footer {
     flex-direction: column;
     gap: 60px;
     align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .profilbild {
+    width: 180px;
+    height: auto;
+    margin-top: 0px;
+    margin-left: 20px;
   }
 
   .hamburger-menu {
     display: block;
+    position: absolute;
+    top: 20px; 
+    right: 120px; 
     font-size: 30px;
     cursor: pointer;
     background: none;
     border: none;
     transition: all 0.3s ease;
+    margin-top: 0;
   }
+  
 
   .hamburger-menu.open {
     transform: rotate(90deg);
@@ -481,6 +538,10 @@ footer {
 
   .sidebar-menu.open {
     display: block;
+  }
+
+  .sidebar li {
+    padding: 5px;
   }
 
   .projekt-container {
@@ -513,13 +574,20 @@ footer {
     flex-shrink: 0;
   }
 
+
   .kontakt-button {
-    order: 0;
+    margin-left: 20px;
+    margin-bottom: 20px;
   }
 
+  .social-media {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+
   .content {
-    order: 1;
-    margin-top: 60px;
+    margin-top: 300px;
     margin-left: 0;
     margin-right: 0;
   }
@@ -539,11 +607,114 @@ footer {
   }
 }
 
+
+
+
 @media (max-width: 360px) {
   .content {
     padding: 5px;
   }
 
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .hamburger-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+
+  .hamburger-menu.open {
+    transform: rotate(90deg);
+  }
+
+  .job-title {
+    margin-top: -5px;
+    font-size: 28px;
+  }
+
+  .sidebar-menu {
+    display: none;
+  }
+
+  .sidebar-menu.open {
+    display: block;
+  }
+
+
+
+
+  .projekt-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+  }
+
+  .projekt-bild img {
+    width: 50%;
+    height: auto;
+  }
+
+  .sidebar,
+  .content {
+    width: 100%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    flex-shrink: 0;
+  }
+
+
+  .kontakt-button {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+   
+  }
+
+  .social-media {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+
+  .content {
+    margin-top: 50px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .container-über-mich {
+    padding: 10px;
+    margin-left: 0;
+  }
+
+  .box {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .content-über-mich {
+    margin-left: 0;
+  }
+  
   .sidebar {
     display: none;
   }
@@ -552,16 +723,11 @@ footer {
     display: block;
   }
 
-  .projekt-container {
-    gap: 10px;
-  }
+  
 
   .projekt img {
     width: 100%;
     height: auto;
   }
 
-  .kontakt-button {
-    width: 100%;
-  }
 }
