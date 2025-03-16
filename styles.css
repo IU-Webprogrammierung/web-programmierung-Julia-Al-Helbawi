@@ -298,7 +298,7 @@ p {
 }
 
 .projekt-link.active {
-  color: #e3a723;
+  color: #1E525D;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -318,7 +318,7 @@ p {
   width: 200px;
   height: 36px;
   font-size: 16px;
-  background-color: #e3a723;
+  background-color: #1E525D;
   color: white;
   border: none;
   border-radius: 4px;
@@ -336,7 +336,6 @@ p {
   padding: 20px;
   background-color: #fafafa;
   text-align: center;
-  item-a
 }
 
 
@@ -399,7 +398,7 @@ margin-top: 50;
   bottom: 20px;
   right: 20px;
   background-color: #f9f9f9;
-  color: #020202;
+  color: #1E525D;
   border: none;
   border-radius: 50%;
   width: 50px;
@@ -412,7 +411,7 @@ margin-top: 50;
 }
 
 .scroll-to-top:hover {
-  background-color: #222324;
+  background-color: #1E525D;
   color: #f9f9f9;
 }
 
