@@ -56,7 +56,7 @@ h1 {
   text-decoration: none;
   color: #020202;
   font-weight: 700;
-  margin-bottom: -5px;
+
   text-align: left;
 }
 
@@ -76,11 +76,19 @@ h1 {
   color: gray;
 }
 
+.sidebar-menu {
+  margin-top: -50px;
+}
+
 h2 {
   font-size: 20px;
   font-weight: 700;
   color: #020202;
   margin-bottom: 20px;
+}
+
+.about-me-info {
+  margin-top: -10px;
 }
 
 .social-media {
@@ -198,7 +206,7 @@ p {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 0px;
-  margin-left: 10px;
+  margin-left: 0;
 }
 
 .sidebar h1.beruf {
@@ -206,14 +214,21 @@ p {
   font-weight: 200;
   margin-bottom: 0px;
   margin-left: 10px;
-  margin-top: -20px;
+  margin-top: -30px;
 }
 
 .sidebar h2 {
   font-size: 16px;
   font-weight: 600;
-  margin-top: 50px;
-  margin-left: 20px;
+  margin-top: 60px;
+  margin-left: 10px;
+}
+
+.sidebar p {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-left: 0;
 }
 
 .sidebar div,
@@ -230,6 +245,10 @@ p {
   padding: 0;
   text-align: left;
   margin-left: 40px;
+}
+
+.about-me-info {
+  margin-top: 0;
 }
 
 .intro {
@@ -336,7 +355,7 @@ p {
 }
 
 .profilbild {
-  width: 180px;
+  width: 140px;
   height: auto;
   margin-top: 20px;
   margin-left: auto;
@@ -502,7 +521,6 @@ footer {
 
   .name-link h1,
   .job-title {
-    font-size: 1.2rem;
     word-wrap: break-word;
   }
 
@@ -528,7 +546,7 @@ footer {
   }
 
   .profilbild {
-    width: 180px;
+    width: 140px;
     height: auto;
     margin-top: 0px;
     margin-left: 20px;
