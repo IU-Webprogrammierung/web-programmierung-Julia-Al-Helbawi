@@ -30,26 +30,24 @@ body {
   margin-left: auto;
 }
 
+h1,
+h2,
+p {
+  color: #333;
+}
+
 h1 {
   font-weight: 700;
   font-size: 32px;
-  color: #333;
   margin-bottom: 0;
 }
 
-.profil-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-}
-
+.profil-container,
 .name-job-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 5px;
-  text-align: left;
+  gap: 10px;
 }
 
 .job-title {
@@ -90,7 +88,6 @@ h1 {
 h2 {
   font-size: 20px;
   font-weight: 700;
-  color: #333;
   margin-bottom: 20px;
 }
 
@@ -110,11 +107,9 @@ h2 {
 .social-media a {
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-decoration: none;
   color: inherit;
-  height: 30px;
-  overflow: hidden;
+  align-items: center;
 }
 
 .social-media a span {
@@ -136,10 +131,15 @@ h2 {
   height: auto;
 }
 
-p {
+p,
+.section-title,
+.section-content {
   font-size: 14px;
+  margin-bottom: 10px;
+}
+
+p {
   font-weight: 400;
-  color: #333;
   text-align: center;
   line-height: 1.6;
 }
@@ -147,8 +147,6 @@ p {
 .section-title {
   display: inline-flex;
   margin-right: 10px;
-  margin-bottom: 0px;
-  font-size: 14px;
   font-weight: 700;
   color: #333;
   text-align: left;
@@ -156,7 +154,6 @@ p {
 
 .section-content {
   display: flex;
-  font-size: 14px;
   font-weight: 400;
   color: #333;
   text-align: left;
@@ -335,7 +332,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 25%;;
+  margin-left: 25%;
   margin-top: 20px;
   margin-right: auto;
   flex: 1;
@@ -504,10 +501,15 @@ footer {
 }
 
 /* Responsive Design */
+
 @media screen and (max-width: 768px) {
   .container {
+    display: flex;
     flex-direction: column;
-    margin-top: 0px;
+    position: relative;
+    gap: 10px;
+    align-items: center;
+    margin: 20px;
   }
 
   .profil-container {
@@ -527,27 +529,6 @@ footer {
   .name-link h1,
   .job-title {
     word-wrap: break-word;
-  }
-
-  .content {
-    width: 100%;
-    margin-top: 20px;
-  }
-
-  .portfolio-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    gap: 10px;
-    align-items: center;
-    margin: 20px;
-   
   }
 
   .profilbild {
@@ -615,6 +596,10 @@ footer {
     margin-top: -20px;
   }
 
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
   .kontakt-button {
     margin-left: 20px;
     margin-bottom: 20px;
@@ -626,7 +611,8 @@ footer {
   }
 
   .content {
-    margin-top: 300px;
+    width: 100%;
+    margin-top: 200px;
     margin-left: 0;
     margin-right: 0;
   }
@@ -645,10 +631,6 @@ footer {
     margin-left: 0;
     margin-top: 250px;
   }
-}
-
-.portfolio-grid {
-  grid-template-columns: 1fr;
 }
 
 @media (max-width: 400px) {
