@@ -54,7 +54,7 @@ h1 {
   font-size: 24px;
   font-weight: 400;
   display: block;
-  margin-top: 0;
+  margin-top: -10px;
   text-align: left;
 }
 
@@ -82,7 +82,7 @@ h1 {
 }
 
 .sidebar-menu {
-  margin-top: -50px;
+  margin-top: -30px;
 }
 
 h2 {
@@ -91,8 +91,12 @@ h2 {
   margin-bottom: 20px;
 }
 
+.projekt-liste {
+  padding-inline-start: -10px;
+}
+
 .about-me-info {
-  margin-top: -10px;
+  margin-top: 10px;
 }
 
 .social-media {
@@ -154,6 +158,7 @@ p {
 
 .section-content {
   display: flex;
+  flex-wrap: wrap;
   font-weight: 400;
   color: #333;
   text-align: left;
@@ -193,18 +198,21 @@ p {
   font-size: 14px;
 }
 
+.container  {
+  width: 100%;
+}
+
 .sidebar {
-  position: fixed;
-  z-index: 500;
-  width: 25%;
-  flex: 0 0 25%;
+  position: sticky;
+  top: 0;
+  width: 30%;
   background: #ffffff;
   padding: 20px;
   display: flex;
   flex-direction: column;
   text-align: left;
   height: 100vh;
-  margin-left: 30px;
+  margin-left: 100px;
 }
 
 .sidebar h1 {
@@ -236,21 +244,20 @@ p {
   margin-left: 0;
 }
 
-.sidebar div,
-.sidebar ul li {
-  font-size: 16px;
-  font-weight: 400;
-  margin-left: 10px;
-  text-align: left;
-  list-style-position: inside;
+.content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 100px;
+  margin-top: 20px;
+  margin-right: 20px;
+  flex: 1;
+  max-width: 70%;
+  background-color: #fafafa;
 }
 
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
-  text-align: left;
-  margin-left: 40px;
-}
+
 
 .about-me-info {
   margin-top: 0;
@@ -260,15 +267,34 @@ p {
   color: gray;
 }
 
+.sidebar div,
+.sidebar ul li {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 10px;
+  text-align: left;
+  list-style-position: inside;
+
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+  margin-left: 20px;
+}
+
+
+
 .intro {
   text-align: center;
   margin-bottom: 20px;
 }
 .projekte {
-  width: 75%;
-  padding: 20px;
+  width: 70%;
+  padding: 5px;
   background-color: #fafafa;
-  text-align: center;
+ align-items: center;
 }
 
 .grid-item img {
@@ -278,7 +304,7 @@ p {
 }
 
 .projekt-bild {
-  width: 70%;
+  width: 100%;
   height: auto;
   display: block;
   margin: auto;
@@ -293,7 +319,7 @@ p {
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
+  gap: 2px;
   padding: 10px;
 }
 
@@ -327,20 +353,10 @@ p {
   width: 100%;
 }
 
-.content {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 25%;
-  margin-top: 20px;
-  margin-right: auto;
-  flex: 1;
-  max-width: 75%;
-}
+
 
 .content-über-mich {
-  width: 100%;
+  width: 75%;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -428,11 +444,7 @@ h2 a {
   display: block;
 }
 
-.container .content {
-  width: 70%;
-  padding: 20px;
-  background-color: #fafafa;
-}
+
 
 .scroll-to-top {
   position: fixed;
@@ -509,21 +521,34 @@ footer {
     position: relative;
     gap: 10px;
     align-items: center;
-    margin: 20px;
-  }
-
-  .profil-container {
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    justify-content: flex-start;
+    margin: 0;
     width: 100%;
   }
 
-  .name-job-container {
-    flex-direction: column;
+  .profil-container {
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    text-align: center;
+    text-align: left;
+    justify-content: flex-start;
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+
+.profilbild {
+    width: 140px;
+    height: auto;
+    margin-left: -30px;
+  }
+  
+  .name-job-container {
+    display: flex ;
+    flex-direction: column;
+    text-align: left;
+    margin-left: -40px; 
+    white-space: normal; 
+    gap: 1;  
   }
 
   .name-link h1,
@@ -531,12 +556,7 @@ footer {
     word-wrap: break-word;
   }
 
-  .profilbild {
-    width: 140px;
-    height: auto;
-    margin-top: 0px;
-    margin-left: 20px;
-  }
+  
 
   .hamburger-menu {
     display: block;
@@ -572,7 +592,7 @@ footer {
   }
 
   .projekt-bild img {
-    width: 50%;
+    width: 100%;
     height: auto;
   }
 
@@ -582,6 +602,8 @@ footer {
 
   .sidebar.open {
     display: block;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   }
 
   .sidebar,
@@ -593,7 +615,8 @@ footer {
     align-items: flex-start;
     gap: 30px;
     flex-shrink: 0;
-    margin-top: -20px;
+    margin-top: -200px;
+    margin-left: 60px;
   }
 
   .portfolio-grid {
@@ -613,8 +636,8 @@ footer {
   .content {
     width: 100%;
     margin-top: 200px;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 20px;
+    margin-right:20px;
   }
 
   .container-über-mich {
