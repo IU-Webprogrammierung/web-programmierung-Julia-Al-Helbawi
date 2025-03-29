@@ -26,7 +26,7 @@
             <img
               src="Bilder/mein-foto.png"
               alt="Julia Al-Helbawi"
-              class="profilbild"
+              class="profile-photo"
             />
           </a>
           <div class="name-job-container">
@@ -38,31 +38,31 @@
         </div>
         <div class="sidebar-menu">
           <h2>Meine Arbeiten</h2>
-          <ul class="projekt-liste">
-            <li class="über-mich-item">
-              <a href="projekt1.html" class="projekt-link"
+          <ul class="project-list">
+            <li class="project-item">
+              <a href="projekt1.html" class="project-link"
                 >Urban Gardening App</a
               >
             </li>
-            <li class="über-mich-item">
-              <a href="projekt2.html" class="projekt-link"
+            <li class="project-item">
+              <a href="projekt2.html" class="project-link"
                 >Landing Page for luxury watches</a
               >
             </li>
-            <li class="über-mich-item">
-              <a href="projekt3.html" class="projekt-link">E-Commerce App</a>
+            <li class="project-item">
+              <a href="projekt3.html" class="project-link">E-Commerce App</a>
             </li>
-            <li class="über-mich-item">Fehlerdatenbank Unternehmenssoftware</li>
-            <li class="über-mich-item">Web-Service Cleaning</li>
-            <li class="über-mich-item">Landing Page Sugaring</li>
-            <li class="über-mich-item">
-              Webseite für die Staatliche Realschule
-            </li>
+            <li class="project-item">Fehlerdatenbank Unternehmenssoftware</li>
+            <li class="project-item">Web-Service Cleaning</li>
+            <li class="project-item">Landing Page Sugaring</li>
+            <li class="project-item">Webseite für die Staatliche Realschule</li>
           </ul>
 
-          <h2><a href="ueber-mich.html" class="projekt-link active">Über mich</a></h2>
+          <h2>
+            <a href="ueber-mich.html" class="about-me-info-active">Über mich</a>
+          </h2>
           <a href="kontakt.html">
-            <button class="kontakt-button">Kontakt</button>
+            <button class="contact-button">Kontakt</button>
           </a>
           <div class="social-media">
             <a
@@ -96,122 +96,103 @@
       <!-- Rechte Spalte: Lebenslauf -->
 
       <div>
-        <main class="content-über-mich">
-          <div class="container-über-mich">
-            <!-- Erste Box: Über mich, Sprachen, Tools -->
-            <div class="box">
-              <h2>Über mich</h2>
-              <div>
-                <p class="section-title">Tools:</p>
-                <p class="section-content">
-                  Figma, Canva, Visme, InDesign, Illustrator
-                </p>
-              </div>
-              <div>
-                <p class="section-title">Sprachen:</p>
-                <p class="section-content">
-                  Deutsch, Englisch, Russisch, Ukrainisch, Arabisch
-                </p>
-              </div>
+        <main class="content">
+          <!-- Erste Box: Werdegang -->
+          <div class="title">
+            <h2>Werdegang</h2>
+          </div>
+          <div class="box">
+            <ul class="about-me">
+              <li class="aboutme-item">
+                <div class="aboutme-header">
+                  <p class="section-title">UI/UX Designer</p>
+                  <span class="aboutme-subtext">WholeWise</span>
+                  <span class="date">11/2024 - bis heute</span>
+                </div>
+              </li>
+
+              <li class="aboutme-item">
+                <div class="aboutme-header">
+                  <p class="section-title">DaZ-Unterricht</p>
+
+                  <span class="date">8/2022 - 1/2024</span>
+                </div>
+                <span class="aboutme-subtext">Grundschule Mönchengladbach</span>
+              </li>
+
+              <li class="aboutme-item">
+                <div class="aboutme-header">
+                  <p class="section-title">Inklusionsfachkraft</p>
+
+                  <span class="date">12/2020 - 6/2021</span>
+                </div>
+                <span class="aboutme-subtext">IDA-Hilfe Viersen</span>
+              </li>
+
+              <li class="aboutme-item">
+                <div class="aboutme-header">
+                  <p class="section-title">Freelancer</p>
+                  <strong></strong>
+                  <span class="date">5/2015 - 3/2021</span>
+                </div>
+                <span class="aboutme-subtext">PE12, Mönchengladbach</span>
+              </li>
+
+              <li class="aboutme-item">
+                <div class="aboutme-header">
+                  <p class="section-title">IU Internationale Hochschule</p>
+
+                  <span class="date">1/2021 - bis heute</span>
+                </div>
+                <span class="aboutme-subtext">UX Design</span>
+              </li>
+
+              <li class="aboutme-item">
+                <div class="aboutme-header">
+                  <p class="section-title">GoIT IT Services und IT-Beratung</p>
+
+                  <span class="date">9/2023 - 12/2023</span>
+                </div>
+                <span class="aboutme-subtext">UI/UX Design</span>
+              </li>
+
+              <li class="aboutme-item">
+                <div class="aboutme-header">
+                  <p class="section-title">Impulse e.V. Fernschule</p>
+
+                  <span class="date">4/2019 - 12/2019</span>
+                </div>
+                <span class="aboutme-subtext">Wuppertal</span>
+              </li>
+
+              <li class="aboutme-item">
+                <div class="aboutme-header">
+                  <p class="section-title">
+                    Nationale Medizinische Universität
+                  </p>
+
+                  <span class="date">2000 - 2007</span>
+                </div>
+                <span class="aboutme-subtext">Kiyv, Ukraine</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- zweite Box: Über mich, Sprachen, Tools -->
+          <div class="box">
+            <div>
+              <p class="section-title">Tools:</p>
+              <p class="section-content">
+                Figma, Canva, Visme, InDesign, Illustrator
+              </p>
             </div>
-
-            <!-- Zweite Box: Werdegang -->
-            <div class="box">
-              <h2>Werdegang</h2>
-              <ul class="über-mich">
-                <li class="über-mich-item">
-                  <div class="über-mich-header">
-                    <p class="section-title">UI/UX Designer</p>
-                    <span class="date">11/2024 - bis heute</span>
-                  </div>
-                  <span class="über-mich-subtext">WholeWise</span>
-                </li>
-
-                <li class="über-mich-item">
-                  <div class="über-mich-header">
-                    <p class="section-title">
-                      Sprachmittlerin (Deutsch, Ukrainisch, Russisch)
-                    </p>
-
-                    <span class="date">3/2020 - bis heute</span>
-                  </div>
-                  <span class="über-mich-subtext">KI Mönchengladbach</span>
-                </li>
-
-                <li class="über-mich-item">
-                  <div class="über-mich-header">
-                    <p class="section-title">DaZ-Unterricht</p>
-
-                    <span class="date">8/2022 - 1/2024</span>
-                  </div>
-                  <span class="über-mich-subtext"
-                    >Grundschule Mönchengladbach</span
-                  >
-                </li>
-
-                <li class="über-mich-item">
-                  <div class="über-mich-header">
-                    <p class="section-title">Inklusionsfachkraft</p>
-
-                    <span class="date">12/2020 - 6/2021</span>
-                  </div>
-                  <span class="über-mich-subtext">IDA-Hilfe Viersen</span>
-                </li>
-
-                <li class="über-mich-item">
-                  <div class="über-mich-header">
-                    <p class="section-title">Freiberufliche Mitarbeiterin</p>
-                    <strong></strong>
-                    <span class="date">5/2015 - 3/2021</span>
-                  </div>
-                  <span class="über-mich-subtext">PE12, Mönchengladbach</span>
-                </li>
-
-                <li class="über-mich-item">
-                  <div class="über-mich-header">
-                    <p class="section-title">IU Internationale Hochschule</p>
-
-                    <span class="date">1/2021 - bis heute</span>
-                  </div>
-                  <span class="über-mich-subtext">UX Design</span>
-                </li>
-
-                <li class="über-mich-item">
-                  <div class="über-mich-header">
-                    <p class="section-title">
-                      GoIT IT Services und IT-Beratung
-                    </p>
-
-                    <span class="date">9/2023 - 12/2023</span>
-                  </div>
-                  <span class="über-mich-subtext">UI/UX Design</span>
-                </li>
-
-                <li class="über-mich-item">
-                  <div class="über-mich-header">
-                    <p class="section-title">Impulse e.V. Fernschule</p>
-
-                    <span class="date">4/2019 - 12/2019</span>
-                  </div>
-                  <span class="über-mich-subtext"
-                    >Gesundheitsberufe Wuppertal</span
-                  >
-                </li>
-
-                <li class="über-mich-item">
-                  <div class="über-mich-header">
-                    <p class="section-title">
-                      Nationale Medizinische Universität
-                    </p>
-
-                    <span class="date">2000 - 2007</span>
-                  </div>
-                  <span class="über-mich-subtext">Kiyv, Ukraine</span>
-                </li>
-              </ul>
+            <div>
+              <p class="section-title">Sprachen:</p>
+              <p class="section-content">
+                Deutsch, Englisch, Russisch, Ukrainisch, Arabisch
+              </p>
             </div>
           </div>
-          
         </main>
         <div class="copyright-text">© 2025 by Julia Al-Helbawi</div>
       </div>
