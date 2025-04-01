@@ -1,12 +1,27 @@
 function toggleMenu() {
   const sidebar = document.querySelector('.sidebar-menu');
-  const menuIcon = document.querySelector('.hamburger-menu');
+  const menuIcon = document.getElementById('menuIcon');
   
  
   sidebar.classList.toggle('open');
   
   
-  menuIcon.textContent = sidebar.classList.contains('open') ? 'x' : '☰'; 
+  if (sidebar.classList.contains('open')) {
+        menuIcon.src = 'Bilder/closeicon.svg'; 
+        menuIcon.alt = 'Close Menu'; 
+    } else {
+        menuIcon.src = 'Bilder/hamburgermenu1.svg'; 
+        menuIcon.alt = 'Hamburger Menu'; 
+    }
+
+    menuIcon.onload = () => {
+      menuIcon.style.display = 'inline'; 
+  };
+
+  menuIcon.onerror = () => {
+      console.error('Bild konnte nicht geladen werden:', menuIcon.src);
+      menuIcon.style.display = 'none'; 
+  };
 }
 
 
