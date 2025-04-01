@@ -15,7 +15,6 @@ body {
 .container {
   display: flex;
   position: relative;
-
   margin-right: 100px;
   margin-top: 10px;
   flex-direction: row;
@@ -590,39 +589,7 @@ footer {
     min-height: 100vh;
   }
 
-  .profil-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-    justify-content: flex-start;
-    width: 100%;
-    margin: auto;
-    flex-wrap: wrap;
-  }
-
-  .profile-photo {
-    width: 120px;
-    height: auto;
-    margin-left: -20px;
-    margin-top: 10px;
-  }
-
-  .name-job-container {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin-left: -20px;
-    white-space: normal;
-    gap: 1;
-  }
-
-  .name-link h1,
-  .job-title {
-    word-wrap: break-word;
-  }
-
-  .hamburger-menu {
+.hamburger-menu {
     display: block;
     top: 20px;
     right: 100px;
@@ -632,27 +599,77 @@ footer {
     transform: rotate(90deg);
   }
 
-  .job-title {
-    margin-top: -5px;
-    font-size: 24px;
-  }
+  .sidebar {
+    position: fixed; 
+    left: -100px; 
+    padding-bottom: 5px;
+    min-height: fit-content;
+}
 
-  .sidebar-menu {
+.sidebar-menu {
     display: none;
   }
 
   .sidebar-menu.open {
     display: block;
+    margin-left: 40px;
+    margin-top: 40px;
     z-index: 1000;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 10px rgba(192, 189, 189, 0.2);
+  }
+
+h2 {
+    text-align: center;
   }
 
   .sidebar li {
     padding: 7px;
   }
+
+  .sidebar ul {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    list-style-position: inside;
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -10px;
+    margin-bottom: 0x;
+    line-height: 1.5;
+  }
+  .profil-container {
+    width: 100vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+
+  .profile-photo {
+    width: 120px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  .name-job-container {
+    display: flex;
+text-align: left;
+    margin-left: -20px;
+    margin-top: 20px;
+    white-space: normal;
+    gap: 1rem;
+    word-wrap: break-word;
+    flex-wrap: wrap; 
+  }
+
+  
   .projects {
     width: 100%;
-    padding: 5px;
+    padding: 2px;
     background-color: rgba(250, 250, 250, 0.8);
     align-items: center;
   }
@@ -667,47 +684,59 @@ footer {
     width: 100%;
     height: auto;
   }
-
-  .sidebar {
-    display: none;
-  }
-
-  .sidebar.open {
-    display: block;
-    z-index: 1000;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  }
-
+  
+  
   .sidebar,
   .content {
     width: 100%;
     display: flex;
-    height: auto;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
+    height: auto;
+    align-items: center;
     flex-shrink: 0;
-    margin-top: -200px;
-    margin-left: 60px;
+   
+   
   }
 
+.content {
+  width: 100vw; 
+  max-width: 100%; 
+  padding: 20px;  
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 320px;
+  box-sizing: border-box; 
+
+
+
   .portfolio-grid {
+    width: 100%;
     grid-template-columns: 1fr;
   }
 
   .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 0;
     margin-top: 30px;
-    margin-left: 20px;
+    margin-bottom: 30px;
   }
 
-  .content {
-    width: 100%;
-    margin-top: 200px;
-    margin-left: 20px;
-    margin-right: 20px;
-    align-items: center;
-    text-align: center;
+  .contact-button {
+    width: 140px;
+    height: 32px;
+    font-size: 16px;
+    background-color: #e3a723;
+    color: white;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto; 
+    display: block; 
+    text-decoration: none;
   }
+
+  
 
   .date {
     align-self: flex-start;
@@ -720,23 +749,9 @@ footer {
     padding: 10px;
   }
 
-  h2 {
-    text-align: center;
-  }
+  
 
-  .sidebar ul {
-    font-size: 16px;
-    font-weight: 400;
-    text-align: left;
-    list-style-position: inside;
-    list-style-type: none;
-    padding: 0;
-    text-align: left;
-    margin-left: 0;
-    margin-top: -10px;
-    margin-bottom: -30px;
-    line-height: 1.5;
-  }
+  
 
   .cv-entry {
     display: flex;
