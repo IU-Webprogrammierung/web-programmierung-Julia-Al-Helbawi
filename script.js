@@ -1,6 +1,7 @@
 function toggleMenu() {
   const sidebar = document.querySelector('.sidebar-menu');
   const menuIcon = document.getElementById('menuIcon');
+ 
   
  
   sidebar.classList.toggle('open');
@@ -16,13 +17,19 @@ function toggleMenu() {
 
     menuIcon.onload = () => {
       menuIcon.style.display = 'inline'; 
-  };
+  }
 
-  menuIcon.onerror = () => {
-      console.error('Bild konnte nicht geladen werden:', menuIcon.src);
-      menuIcon.style.display = 'none'; 
-  };
 }
+
+document.querySelector(".toggle-button").addEventListener("click", function () {
+  const list = document.querySelector(".project-list");
+  list.classList.toggle("hidden");
+  this.classList.toggle("open"); // Damit sich der Pfeil dreht
+});
+
+
+
+
 
 
 

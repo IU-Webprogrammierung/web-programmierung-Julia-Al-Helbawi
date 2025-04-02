@@ -19,7 +19,13 @@
     <div class="container">
       <!-- Sidebar -->
       <aside class="sidebar">
-        <nav class="hamburger-menu" onclick="toggleMenu()"><img id="menuIcon" src="Bilder/hamburgermenu1.svg" alt="Hamburger Menü"></nav>
+        <nav class="hamburger-menu" onclick="toggleMenu()">
+          <img
+            id="menuIcon"
+            src="Bilder/hamburgermenu1.svg"
+            alt="Hamburger Menü"
+          />
+        </nav>
         <div class="profil-container">
           <a href="index.html"
             ><span class="sr-only">Mein Foto</span>
@@ -37,8 +43,15 @@
           </div>
         </div>
         <div class="sidebar-menu">
-          <h2>Meine Arbeiten</h2>
-          <ul class="project-list">
+          <h2 class="toggle-button">
+            Meine Arbeiten
+            <img
+              src="Bilder/aufklapp-icon.svg"
+              alt="Aufklapp-Pfeil"
+              class="icon"
+            />
+          </h2>
+          <ul class="project-list hidden">
             <li class="project-item">
               <a href="projekt1.html" class="project-link"
                 >Urban Gardening App</a
@@ -96,8 +109,7 @@
       <!-- Rechte Spalte: Lebenslauf -->
 
       <div>
-        <main class="content">
-          <!-- Erste Box: Werdegang -->
+        <main class="content-cv">
           <div class="title">
             <h2>Werdegang</h2>
           </div>
@@ -110,76 +122,66 @@
             <div class="date">11/2024 – 4/2025</div>
           </div>
 
-              <div class="cv-entry">
-                <div class="cv-info">
-                  <span class="section-title">DaZ-Unterricht</span>
-                  <span class="job-location">Will-Sommer-Grundschule</span>
-                </div>
-                  <div class="date">8/2022 - 1/2024</div>
-                
-                
-              </div>
+          <div class="cv-entry">
+            <div class="cv-info">
+              <span class="section-title">DaZ-Unterricht</span>
+              <span class="job-location">Will-Sommer-Grundschule</span>
+            </div>
+            <div class="date">8/2022 - 1/2024</div>
+          </div>
 
-              <div class="cv-entry">
-                <div class="cv-info">
-                  <span class="section-title">Inklusionsfachkraft</span>
-                  <span class="job-location">IDA-Hilfe Viersen</span> </div>
-                  <div class="date">12/2020 - 6/2021</div>
-               
-                
-              </div>
+          <div class="cv-entry">
+            <div class="cv-info">
+              <span class="section-title">Inklusionsfachkraft</span>
+              <span class="job-location">IDA-Hilfe Viersen</span>
+            </div>
+            <div class="date">12/2020 - 6/2021</div>
+          </div>
 
-              <div class="cv-entry">
-                <div class="cv-info">
-                  <span class="section-title">Freelancer</span>
-                  <span class="job-location">PE12, Mönchengladbach</span>
-                </div>
-                  <div class="date">5/2015 - 3/2021</div>
-               
-                
-              </div>
+          <div class="cv-entry">
+            <div class="cv-info">
+              <span class="section-title">Freelancer</span>
+              <span class="job-location">PE12, Mönchengladbach</span>
+            </div>
+            <div class="date">5/2015 - 3/2021</div>
+          </div>
 
-              <div class="cv-entry">
-                <div class="cv-info">
-                  <span class="section-title">IU Internationale Hochschule</span>
-                  <span class="job-location">UX Design</span> </div>
-                  <div class="date">2021 - Heute</div>
-               
-               
-              </div>
+          <div class="cv-entry">
+            <div class="cv-info">
+              <span class="section-title">IU Internationale Hochschule</span>
+              <span class="job-location">UX Design</span>
+            </div>
+            <div class="date">2021 - Heute</div>
+          </div>
 
-              <div class="cv-entry">
-                <div class="cv-info">
-                  <span class="section-title">GoIT IT Services und IT-Beratung</span>
-                  <span class="job-location">UI/UX Design</span></div>
-                  <div class="date">5/2023 - 12/2023</div>
-                
-                </div>  
-              
+          <div class="cv-entry">
+            <div class="cv-info">
+              <span class="section-title"
+                >GoIT IT Services und IT-Beratung</span
+              >
+              <span class="job-location">UI/UX Design</span>
+            </div>
+            <div class="date">5/2023 - 12/2023</div>
+          </div>
 
-              <div class="cv-entry">
-                <div class="cv-info">
-                  <span class="section-title">Impulse e.V. Fernschule</span>
-                  <span class="job-location">Wuppertal</span></div>
-                  <div class="date">4/2019 - 12/2019</div>
-                
-                
-              </div>
+          <div class="cv-entry">
+            <div class="cv-info">
+              <span class="section-title">Impulse e.V. Fernschule</span>
+              <span class="job-location">Wuppertal</span>
+            </div>
+            <div class="date">4/2019 - 12/2019</div>
+          </div>
 
-              <div class="cv-entry">
-                <div class="cv-info">
-                  <span class="section-title">
-                    Nationale Medizinische Universität
-                  </span>
-                  <span class="job-location">Kiyv, Ukraine</span></div>
-                  <div class="date">2000 - 2007</div>
-                
-                
-              </div>
-           
-        
+          <div class="cv-entry">
+            <div class="cv-info">
+              <span class="section-title">
+                Nationale Medizinische Universität
+              </span>
+              <span class="job-location">Kiyv, Ukraine</span>
+            </div>
+            <div class="date">2000 - 2007</div>
+          </div>
 
-          <!-- zweite Box: Über mich, Sprachen, Tools -->
           <div class="skills">
             <div>
               <p class="section-title">Tools:</p>
@@ -194,13 +196,12 @@
               </p>
             </div>
           </div>
-          </main>
-       
-      
+        </main>
+
         <div class="copyright-text">© 2025 by Julia Al-Helbawi</div>
       </div>
-   
-    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
-  </div>
+
+      <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+    </div>
   </body>
 </html>
