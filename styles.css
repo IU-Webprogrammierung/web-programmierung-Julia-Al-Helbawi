@@ -709,7 +709,7 @@ footer {
     display: block;
     background-color: #fff;
     margin-left: -20px;
-    margin-top: -250px;
+    margin-top: 0;
     border-radius: 3px;
     z-index: 10;
     box-shadow: 0px 4px 10px rgba(192, 189, 189, 0.2);
@@ -744,8 +744,9 @@ footer {
   }
   .profil-container {
     width: 100vw;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    padding-bottom: 0;
     z-index: 5;
   }
 
@@ -760,9 +761,9 @@ footer {
     display: flex;
     text-align: left;
     margin-left: -20px;
-    margin-top: 10px;
-    white-space: normal;
-    gap: 1rem;
+    margin-top: 85px;
+     white-space: normal;
+    gap: 6px;
     word-wrap: break-word;
     flex-wrap: wrap;
   }
@@ -807,7 +808,7 @@ footer {
     padding: 20px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 320px;
+    margin-top: 200px;
     box-sizing: border-box;
   }
 
@@ -851,7 +852,7 @@ footer {
     padding-bottom: 4px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 320px;
+    margin-top: 200px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -923,9 +924,65 @@ footer {
     right: 20px;
   }
 
-  @media (max-width: 400px) {
-    .content {
-      padding: 10px;
-    }
+ 
+}
+
+@media screen and (max-width: 480px) {
+
+  .profil-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 5;
   }
+
+  .name-job-container {
+    display: flex;
+    text-align: left;
+    margin-left: -20px;
+    margin-top: 0px;
+    margin-bottom: 0;
+     white-space: normal;
+    gap: 6px;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+  }
+
+  .sidebar-menu.open {
+    display: block;
+    background-color: #fff;
+    margin-left: -20px;
+    margin-top: -280px;
+    border-radius: 3px;
+    z-index: 10;
+    box-shadow: 0px 4px 10px rgba(192, 189, 189, 0.2);
+  }
+
+  .content {
+    width: 100vw;
+    max-width: 100%;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 280px;
+    box-sizing: border-box;
+  }
+  
+  .content-cv {
+    width: 100vw;
+    max-width: 100%;
+    padding: 10px;
+    padding-bottom: 4px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 280px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+
 }
