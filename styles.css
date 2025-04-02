@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
 
+
+a {
+ text-decoration: none;
+}
+
+
 body {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 1rem;
@@ -183,11 +189,10 @@ p {
 
 .toggle-button {
   display: flex;
-  align-items: center; 
-  gap: 6px; 
+  align-items: center;
+  gap: 6px;
   cursor: pointer;
   user-select: none;
-  
 }
 
 .toggle-button:hover {
@@ -196,11 +201,10 @@ p {
 
 .toggle-button {
   display: flex;
-  align-items: center; 
-  gap: 6px; 
+  align-items: center;
+  gap: 6px;
   cursor: pointer;
   user-select: none;
-  
 }
 
 .toggle-button:hover {
@@ -239,16 +243,9 @@ p {
   line-height: 1.5;
 }
 
-
-
-
-
 .sidebar li {
   padding: 7px;
 }
-
-
-
 
 .project-item {
   display: flex;
@@ -274,7 +271,6 @@ p {
 .about-me-info {
   margin-top: 0;
   margin-bottom: 20px;
-  
 }
 
 .about-me-info:hover {
@@ -286,6 +282,8 @@ p {
   font-weight: 700;
   text-decoration: underline;
 }
+
+
 
 .contact-button {
   width: 140px;
@@ -321,21 +319,16 @@ p {
   color: gray;
 }
 
-
-
 .social-media {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
   margin-top: 40px;
   position: relative;
-  left: -20px; 
-  
+  left: -20px;
 }
-
-
 
 .social-media a {
   display: flex;
@@ -348,8 +341,8 @@ p {
 .social-media a span {
   font-size: 12px;
   opacity: 0;
-  height: 12px; 
-  visibility: hidden; 
+  height: 12px;
+  visibility: hidden;
   transition: opacity 0.3s ease, height 0.3s ease;
 }
 
@@ -394,7 +387,7 @@ p {
 
 .grid-item {
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .grid-item img {
@@ -402,11 +395,11 @@ p {
   height: auto;
   display: block;
   border-radius: 3px;
-  transition: transform 0.3s ease-in-out; 
+  transition: transform 0.3s ease-in-out;
 }
 
 .grid-item:hover img {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 form {
@@ -543,9 +536,6 @@ p,
   width: 100%;
   display: block;
 }
-
-
-
 
 .projekt-container {
   display: flex;
@@ -700,15 +690,15 @@ footer {
   }
 
   .project-list {
-    max-height: none; 
-    opacity: 1; 
+    max-height: none;
+    opacity: 1;
     visibility: visible;
-    display: block; 
-    transition: none; 
+    display: block;
+    transition: none;
   }
 
   .icon {
-    display: none; 
+    display: none;
   }
 
   .sidebar-menu {
@@ -757,7 +747,6 @@ footer {
     flex-wrap: wrap;
     padding-bottom: 0;
     z-index: 5;
-    
   }
 
   .profile-photo {
@@ -783,11 +772,6 @@ footer {
     align-items: center;
     justify-content: center;
   }
-
- 
-  
-
- 
 
   .projects {
     width: 100%;
@@ -847,15 +831,13 @@ footer {
     height: 32px;
     font-size: 16px;
     background-color: #e3a723;
-     margin-top: 40px;
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
     display: block;
     color: white;
     text-decoration: none;
-    
   }
-
 
   .date {
     align-self: flex-start;
@@ -877,8 +859,8 @@ footer {
     align-items: center;
   }
 
-.skills {
-  width: 100vw;
+  .skills {
+    width: 100vw;
     max-width: 100%;
     margin-top: 0;
     margin-bottom: 0;
@@ -891,11 +873,11 @@ footer {
     height: auto;
     text-align: center;
   }
-  
+
   .cv-entry {
     display: flex;
     flex-direction: column;
-    
+
     margin-top: 5px;
     margin-bottom: 5px;
   }
@@ -924,11 +906,7 @@ footer {
   .section-content {
     text-align: center;
   }
-  
-  
 
-  
-  
   form {
     display: flex;
     flex-direction: column;
@@ -942,7 +920,7 @@ footer {
   }
 
   .scroll-to-top {
- right: 20px;
+    right: 20px;
   }
 
   @media (max-width: 400px) {
