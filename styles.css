@@ -100,7 +100,7 @@ p {
   background: none;
   border: none;
   padding: 0;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
 
 .profil-container,
@@ -138,7 +138,7 @@ p {
 }
 
 .job-title {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 400;
   font-style: italic;
   display: block;
@@ -592,6 +592,14 @@ p,
     min-height: 100vh;
   }
 
+
+p,
+.sidebar h2,
+.sidebar div,
+.sidebar ul li {
+  font-size: 18px;
+}
+
   .hamburger-menu {
     display: flex;
     flex-direction: column;
@@ -704,7 +712,7 @@ p,
     padding: 20px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 200px;
+    margin-top: 210px;
     box-sizing: border-box;
   }
 
@@ -727,6 +735,10 @@ p,
     margin-bottom: 30px;
   }
 
+  .intro {
+   padding-top: 20px;
+  }
+
   form {
     text-align: left;
     margin-top: 20px;
@@ -738,7 +750,7 @@ p,
     padding-bottom: 4px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 200px;
+    margin-top: 220px;
     box-sizing: border-box;
     height: auto;
     align-items: center;
@@ -809,17 +821,17 @@ p,
     margin-left: auto;
     margin-right: auto;
     max-width: 90vw;
-    margin-top: -240px;
+    margin-top: -310px;
   }
 
   .content {
     width: 100vw;
     max-width: 100%;
-    margin-top: 280px;
+    margin-top: 300px;
   }
 
   .content-cv {
     padding: 10px;
-    margin-top: 280px;
+    margin-top: 330px;
   }
 }
