@@ -1,7 +1,5 @@
-
-
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   margin: 0;
@@ -54,7 +52,7 @@ p {
 }
 
 .contact-button,
-.submit-button{
+.submit-button {
   font-size: 16px;
   width: 140px;
   height: 30px;
@@ -75,7 +73,6 @@ p {
   color: #ffffff;
   background-color: #095363;
 }
-
 
 /* Sidebar */
 
@@ -161,7 +158,6 @@ p {
   margin-left: 10px;
 }
 
-
 .sidebar-menu {
   border-top: 1px solid #e3a723;
   margin-top: 0;
@@ -220,7 +216,7 @@ p {
 .sidebar div,
 .sidebar ul li {
   font-size: 16px;
-font-weight: 400;
+  font-weight: 400;
   margin-left: 10px;
   text-align: left;
   list-style-position: inside;
@@ -264,7 +260,6 @@ font-weight: 400;
   margin-top: 20px;
   margin-left: 10px;
 }
-
 
 .social-media {
   display: flex;
@@ -338,6 +333,49 @@ font-weight: 400;
   overflow: hidden;
 }
 
+.special-item .image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.special-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.grid-item:hover .image-container img {
+  opacity: 1;
+}
+
+.grid-item:hover .overlay {
+  opacity: 1;
+}
+
+.special-item .overlay p {
+  color: #ffffff;
+}
+
 .grid-item img {
   width: 100%;
   height: auto;
@@ -397,9 +435,7 @@ textarea {
   margin-right: -20px;
 }
 
-
 /* Ueber mich */
-
 
 .content-cv {
   width: 70%;
