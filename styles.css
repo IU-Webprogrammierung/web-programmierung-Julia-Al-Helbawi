@@ -1,12 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
 
 body {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   margin: 0;
@@ -15,6 +10,11 @@ body {
   justify-content: center;
   background-color: #fff;
   overflow: visible;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .container {
@@ -34,30 +34,55 @@ p {
 }
 
 h1 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 32px;
+  font-style: italic;
   margin-bottom: 0;
 }
 
 h2 {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   text-align: center;
   line-height: 1.6;
 }
+
+.contact-button,
+.submit-button{
+  font-size: 16px;
+  width: 140px;
+  height: 30px;
+  background-color: #e3a723;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.contact-button:hover,
+.submit-button:hover {
+  background-color: #222324;
+}
+
+.contact-button:active,
+.submit-button:active {
+  color: #ffffff;
+  background-color: #095363;
+}
+
 
 /* Sidebar */
 
 .sidebar {
   position: sticky;
   top: 0;
-  width: 20%;
+  width: 30%;
   background: #ffffff;
   padding: 20px;
   display: flex;
@@ -101,35 +126,30 @@ p {
 }
 
 .profile-photo {
-  width: 110px;
+  width: 160px;
   height: auto;
   margin-top: 20px;
   margin-left: auto;
-}
-
-.name-link {
-  text-decoration: none;
-  font-weight: 600;
-  text-align: left;
 }
 
 .name-link h1,
 .job-title p {
   margin: 0;
   word-wrap: break-word;
+  text-decoration: none;
+  text-align: left;
 }
 
 .job-title {
   font-size: 24px;
   font-weight: 400;
+  font-style: italic;
   display: block;
-  margin-top: -10px;
+  margin-top: -20px;
   text-align: left;
 }
 
 .sidebar h1 {
-  font-size: 24px;
-  font-weight: 600;
   margin-bottom: 0px;
   margin-left: 0;
 }
@@ -137,16 +157,10 @@ p {
 .sidebar h2 {
   font-size: 16px;
   font-weight: 600;
-  margin-top: 60px;
+  margin-top: 30px;
   margin-left: 10px;
 }
 
-.sidebar p {
-  font-size: 16px;
-  font-weight: 600;
-  margin-top: 0;
-  margin-left: 0;
-}
 
 .sidebar-menu {
   border-top: 1px solid #e3a723;
@@ -206,6 +220,7 @@ p {
 .sidebar div,
 .sidebar ul li {
   font-size: 16px;
+font-weight: 400;
   margin-left: 10px;
   text-align: left;
   list-style-position: inside;
@@ -215,7 +230,7 @@ p {
   padding: 0px;
   text-align: left;
   margin-left: 20px;
-  margin-top: -10px;
+  margin-top: 0px;
   margin-bottom: -20px;
   line-height: 1.5;
 }
@@ -246,33 +261,17 @@ p {
 }
 
 .contact-button {
-  width: 140px;
-  height: 30px;
-  font-size: 16px;
-  background-color: #e3a723;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
   margin-top: 20px;
   margin-left: 10px;
 }
 
-.contact-button:hover {
-  background-color: #222324;
-}
-
-.contact-button:active {
-  color: #ffffff;
-  background-color: #095363;
-}
 
 .social-media {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  gap: 5px;
+  gap: 0px;
   margin-top: 40px;
   position: relative;
   left: -10px;
@@ -287,7 +286,7 @@ p {
 }
 
 .social-media a span {
-  font-size: 12px;
+  font-size: 14px;
   opacity: 0;
   height: 12px;
   visibility: hidden;
@@ -312,11 +311,11 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 50px;
+  margin-left: 100px;
   margin-top: 30px;
-  margin-right: 20px;
+  margin-right: auto;
   flex: 1;
-  max-width: 80%;
+  max-width: 70%;
   background-color: rgba(250, 250, 250, 0.8);
 }
 
@@ -373,7 +372,7 @@ label {
   font-weight: 400;
   margin-top: 20px;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 16px;
   color: #5e5e5e;
 }
 
@@ -385,7 +384,7 @@ textarea {
   margin-bottom: 20px;
   border: 1px solid #9f9f9f;
   border-radius: 3px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 textarea {
@@ -393,40 +392,25 @@ textarea {
 }
 
 .submit-button {
-  width: 140px;
-  height: 30px;
-  font-size: 16px;
-  background-color: #e3a723;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-left: auto;
   margin-right: -20px;
 }
 
-.submit-button:hover {
-  background-color: #222324;
-}
-
-.submit-button:active {
-  color: #ffffff;
-  background-color: #095363;
-}
 
 /* Ueber mich */
 
+
 .content-cv {
-  width: 80%;
+  width: 70%;
   padding-top: 10px;
   padding-left: 50px;
   padding-right: 50px;
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
+  margin-left: 100px;
   margin-top: 30px;
-  margin-right: 20px;
+  margin-right: auto;
   gap: 10px;
   flex: 1;
   max-width: 100%;
@@ -461,14 +445,15 @@ p,
 
 .section-title,
 .job-location,
-.date {
-  font-size: 14px;
+.date,
+.section-content {
+  font-size: 16px;
 }
 
 .section-title {
   display: inline-flex;
   margin-right: 10px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .section-title,
@@ -502,7 +487,7 @@ p,
 
 .projects {
   width: 90%;
-  padding: 5px;
+  padding: 10px;
   background-color: rgba(250, 250, 250, 0.8);
   align-items: center;
 }
@@ -584,10 +569,6 @@ p,
     transform: rotate(90deg);
   }
 
-  p {
-    font-size: 16px;
-  }
-
   .sidebar {
     position: fixed;
     left: -100px;
@@ -649,6 +630,8 @@ p,
   }
 
   .profile-photo {
+    width: 140px;
+    height: auto;
     margin-top: 0;
     margin-left: 10px;
   }
@@ -656,7 +639,7 @@ p,
   .name-job-container {
     text-align: left;
     margin-left: -20px;
-    margin-top: 75px;
+    margin-top: 94px;
     white-space: normal;
     gap: 6px;
     word-wrap: break-word;
@@ -734,13 +717,6 @@ p,
   .cv-info {
     align-items: center;
     text-align: center;
-  }
-
-  .job-location,
-  .date,
-  .section-title,
-  .section-content {
-    font-size: 15px;
   }
 
   .job-location {
